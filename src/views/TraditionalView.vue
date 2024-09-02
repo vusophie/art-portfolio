@@ -1,15 +1,28 @@
+
 <template>
-    <div class="traditional">
-      <h1>This is a traditional page</h1>
-    </div>
-  </template>
-  
-  <style>
-  @media (min-width: 1024px) {
-    .traditional {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
+  <div class="traditional">
+    <GalleryList initialTab="traditional" />
+  </div>
+</template>
+
+<script>
+  import GalleryList from '../components/GalleryList.vue';
+
+  export default {
+    name: 'traditional',
+    components: {
+      GalleryList,
+    },
+  };
+
+</script>
+
+<style>
+@media (min-width: 1024px) {
+  .traditional {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
   }
-  </style>
+}
+</style>

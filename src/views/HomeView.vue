@@ -1,17 +1,17 @@
 
 <template>
   <div class="home">
-    <GalleryStore initialTab="all" />
+    <GalleryList initialTab="home" />
   </div>
 </template>
 
 <script>
-  import GalleryStore from '../components/GalleryStore.vue';
+  import GalleryList from '../components/GalleryList.vue';
 
   export default {
     name: 'home',
     components: {
-      GalleryStore,
+      GalleryList,
     },
   };
 
