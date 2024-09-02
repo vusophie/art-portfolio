@@ -1,0 +1,15 @@
+[
+    {
+      "id": 0,
+      "title": "Marshmallo",
+      "type": "digital",
+      "filename": {
+        "original": "src/images/marshmallo.jpg",
+        "thumbnail": "src/images/thumbnails/marshmallo.jpg"
+      },
+      "description": {
+        "tools": "NOT MY IMAGE",
+        "url": "https://cdns-images.dzcdn.net"
+      }
+    }
+]

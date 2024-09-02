@@ -1,12 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
+import ContactBar from './components/ContactBar.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
       <NavBar />
+      <ContactBar />      
     </div>
   </header>
 </template>
@@ -14,7 +15,7 @@ import NavBar from './components/NavBar.vue'
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  max-height: 120vh;
 }
 
 @media (min-width: 1024px) {
