@@ -1,11 +1,9 @@
+/*
+Feeds the GalleryStore the tabName and displays the gallery items on the webpage. 
+*/
 <template>
   <div class="gallery-list">
-    <GalleryStore 
-      :initialTab="initialTab" 
-      @filteredPhotos="updatePhotos" />
-    <div class="gallery-item" v-for="photo in photos" :key="photo.id">
-      <img :src="photo.filename.thumbnail">
-    </div>
+    <GalleryStore :initialTab="initialTab" />
   </div>
 </template>
 
@@ -23,31 +21,12 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-      photos: [],
-    };
-  },
-  methods: {
-    updatePhotos(filteredPhotos) {
-      this.photos = filteredPhotos;
-    },
-  },
 };
 </script>
 
 <style scoped>
 .gallery-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  gap: 10px;
+  display: flex;
   justify-items: center;
-  align-items: center;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
 }
 </style>
