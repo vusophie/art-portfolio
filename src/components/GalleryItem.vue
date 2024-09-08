@@ -1,7 +1,7 @@
 <template>
     <div class="gallery-item">
         <div class="gallery-panel">
-            <img :src="thumbnail" @error="handleImageError" :alt="title">
+            <img :src="thumbnail" :alt="title">
             <p>{{ description }}</p>
         </div>
     </div>
@@ -9,8 +9,8 @@
 
 <script>
 export default {
-    name: 'GalleryItem',
-    props: {
+  name: 'GalleryItem',
+  props: {
     title: {
       type: String,
       required: true,
@@ -24,21 +24,20 @@ export default {
       required: true,
     },
   },
-    methods: {
-        // TODO
-        handleImageError(event) {
-        //     event.target.src = 'path/to/default-image.jpg'; 
-        },
+  methods: {
+    // TODO
+    handleImageError(event) {
+    //     event.target.src = 'path/to/default-image.jpg'; 
     },
+  },
 };
 </script>
 
 <style scoped>
-/* .gallery-item {
-  margin: 10px;
+.gallery-panel img {
+  width: 100%;
+  height: 22vw;
+  object-fit: cover;
+  border-radius: 0.75rem;
 }
-.gallery-panel {
-  display: flex;
-  justify-content: center;
-} */
 </style>

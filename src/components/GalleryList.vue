@@ -2,9 +2,7 @@
 Feeds the GalleryStore the tabName and displays the gallery items on the webpage. 
 */
 <template>
-  <div class="gallery-list">
     <GalleryStore :initialTab="initialTab" />
-  </div>
 </template>
 
 <script>
@@ -25,8 +23,5 @@ export default {
 </script>
 
 <style scoped>
-.gallery-list {
-  display: flex;
-  justify-items: center;
-}
+
 </style>

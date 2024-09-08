@@ -23,6 +23,7 @@
     min-height: 70vh;
     display: flex;
     align-items: center;
+    
   }
 }
 </style>

@@ -53,13 +53,13 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
   };
   </script>
 
-<style>
+<style scoped>
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(4, auto);  /* 4 rows */
-  gap: 10px;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 80rem;
+  margin: 5rem auto;
+  padding: 0 5rem;
 }
 </style>

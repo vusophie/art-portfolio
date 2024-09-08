@@ -9,5 +9,6 @@ import ContactBar from './components/ContactBar.vue'
 </template>
 
 <style scoped>
-
+html {  
+}
 </style>
