@@ -4,7 +4,7 @@ import ContactBar from './components/ContactBar.vue'
 </script>
 
 <template>
-      <NavBar />
+  <NavBar />
   <ContactBar />      
 </template>
 

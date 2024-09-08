@@ -20,11 +20,11 @@ import { RouterLink, RouterView } from 'vue-router'
     }
   
     nav a.router-link-exact-active {
-        color: var(--color-text);
+        color: blue;
     }
     
     nav a.router-link-exact-active:hover {
-        background-color: transparent;
+        background-color: blue;
     }
     
     nav a {
@@ -37,7 +37,7 @@ import { RouterLink, RouterView } from 'vue-router'
         border: 0;
     }
 
-    @media (min-width: 1024px) {
+    /* @media (min-width: 1024px) {
         nav {
             text-align: left;
             margin-left: -1rem;
@@ -47,5 +47,5 @@ import { RouterLink, RouterView } from 'vue-router'
             margin-top
             : 1rem;
         }
-    }
+    } */
 </style>
