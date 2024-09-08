@@ -6,10 +6,12 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
     <GalleryItem 
       v-for="photo in filteredPhotos"
       :key="photo.id"
+      :id="photo.id"
       :title="photo.title"
       :thumbnail="photo.filename.thumbnail"
       :description="photo.description.url" 
     />
+    
   </div>
 </template>
 
