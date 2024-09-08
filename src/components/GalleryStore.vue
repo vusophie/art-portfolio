@@ -11,7 +11,6 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
       :thumbnail="photo.filename.thumbnail"
       :description="photo.description.url" 
     />
-    
   </div>
 </template>
 
