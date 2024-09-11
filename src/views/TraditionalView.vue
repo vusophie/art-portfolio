@@ -1,7 +1,7 @@
 
 <template>
-  <div class="home">
-    <GalleryList initialTab="home" />
+  <div class="traditional">
+    <GalleryList initialTab="traditional" />
   </div>
 </template>
 
@@ -9,7 +9,7 @@
   import GalleryList from '../components/GalleryList.vue';
 
   export default {
-    name: 'home',
+    name: 'traditional',
     components: {
       GalleryList,
     },
@@ -19,7 +19,7 @@
 
 <style>
 @media (min-width: 1024px) {
-  .home {
+  .traditional {
     min-height: 90vh;
     display: flex;
     align-items: center;
