@@ -17,6 +17,8 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
   <script>
   import photos from '../photos.json';
   import GalleryItem from './GalleryItem.vue';
+
+  console.log('test');
   
   export default {
     name: 'GalleryStore',
