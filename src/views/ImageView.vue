@@ -1,6 +1,6 @@
 <template>
     <div class="lightbox" @click.self="closeLightbox">
-      <img :src="photo.filename.simplified" alt="Full image">
+      <img :src="photo.filename.original" alt="photo.title">
       <div class="lightbox-info">
         <div class="lightbox-info-inner">
           <p v-if="photo.title">{{ photo.title }}</p>
@@ -30,7 +30,7 @@
     },
     methods: {
         photoUrl(filename) {
-            return require(`../images/thumbnails/${filename}`);
+            return require(`/thumbnails/${filename}`);
         },
       closeLightbox() {
         this.$router.push('/'); 
