@@ -1,15 +1,34 @@
 <template>
-  <div class="about">
-    <h1>This is a about page</h1>
-  </div>
+  <CContainer fluid class="about">
+    <CContainer sm class="left">
+      Content here
+    </CContainer>
+    <CContainer lg class="right">
+      Content here
+    </CContainer>
+  </CContainer>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between; /* Push inner containers to opposite sides */
+  align-items: center;
+  background-color: red;
+}
+
+CContainer {
+  background-color: blue;
+  padding: 20px; /* Optional for spacing */
+  height: 100vh;
+}
+
+.right {
+  flex-basis: 30%; /* 35% width for the first container */
+}
+
+.left {
+  flex-basis: 60%; /* 65% width for the second container */
 }
 </style>
