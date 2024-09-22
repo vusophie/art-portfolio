@@ -1,9 +1,7 @@
 CContainer {
-    padding: 20px;
-  }
-  .title {
-    font-size: 24px;
-    margin-bottom: 20px;
+    padding: 40px;
   }
 
-  
+html {
+    font-family: din-next-w01-light,  sans-serif;
+}

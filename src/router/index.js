@@ -5,13 +5,17 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue')
+      name: 'traditional',
+      component: () => import('../views/TraditionalView.vue')
     },
     {
       path: '/traditional',
       name: 'traditional',
       component: () => import('../views/TraditionalView.vue')
+    },{
+      path: '/animation',
+      name: 'animation',
+      component: () => import('../views/AnimationView.vue')
     },
     {
       path: '/digital',
@@ -22,11 +26,6 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../views/ContactView.vue')
     },
     {
       path: '/image/:id',
