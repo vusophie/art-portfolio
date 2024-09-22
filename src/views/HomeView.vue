@@ -20,6 +20,7 @@
 <style>
 @media (min-width: 1024px) {
   .home {
+    margin-top: 13vh;
     min-height: 90vh;
     display: flex;
     align-items: center;
