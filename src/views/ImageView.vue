@@ -1,14 +1,13 @@
 <template>
-    <div class="lightbox" @click.self="closeLightbox">
-      <img :src="photo.filename.original" alt="photo.title">
-      <div class="lightbox-info">
-        <div class="lightbox-info-inner">
-          <p v-if="photo.title">{{ photo.title }}</p>
-          <p v-if="photo.type">{{ photo.type }}</p>
-          <p v-if="photo.description">{{ photo.description }}</p>
-        </div>
+    <CContainer fluid class="image">
+      <div>
+        <p v-if="photo.title">{{ photo.title }}</p>
+        <p v-if="photo.type">{{ photo.type }}</p>
+        <p v-if="photo.description.tools">{{ photo.description.tools }}</p>
+        <p v-if="photo.description.url">{{ photo.description.url }}</p>
       </div>
-    </div>
+      <img :src="photo.filename.original" alt="photo.title">
+    </CContainer>
   </template>
   
   <script>
@@ -24,7 +23,6 @@
     computed: {
       photo() {
         let img = this.photos.find(photo => photo.id === Number(this.$route.params.id));
-        // console.log(img);
         return img;
         },  
     },
@@ -38,33 +36,17 @@
     },
   };
   </script>
+
+<style>
+  .image {
+    margin-top: 20vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+</style>
   
-  <style scoped>
-    .lightbox {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
-    }
-
-    .lightbox img {
-        margin: auto;
-        width: 100%;
-        grid-column-start: 2;
-    }
-
-    .lightbox-info {
-        margin: auto 2rem auto 0;
-    }
-
-    .lightbox-info-inner {
-        background-color: #FFFFFF;
-        display: inline-block;
-        padding: 2rem;
-    }
-</style>  
