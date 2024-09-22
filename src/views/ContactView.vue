@@ -1,7 +1,9 @@
 <template>
   <CContainer fluid class="contact">
-    <CContainer lg class="content">
+    <CContainer lg class="left">
       <h1>This is a contact page</h1>
+    </CContainer>
+    <CContainer lg class="right">
       <p class="title"><strong>Sophie Illustration</strong></p>
       <p class="contact"><strong>CONTACT</strong></p>
       <p><a href="https://www.linkedin.com/in/vu-sophie/" target="_blank">LinkedIn</a></p>
@@ -20,8 +22,17 @@
   padding: 20px;
 }
 
-.content {
-  background-color: #fff; /* White background for content container */
+.left {
+  flex-basis: 60%;
+  background-color: #fff; /* Whit  e background for content container */
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+}
+
+.right {
+  flex-basis: 30%;
+  background-color: #fff; /* Whit  e background for content container */
   padding: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: center;
