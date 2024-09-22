@@ -2,7 +2,7 @@
     <CContainer 
       class="navbar"
       :class="{ 'navbar--hidden': !showNavbar }">
-      <p class="title">Sophie Illustrations</p>
+      <RouterLink to="/" class="title">Sophie Illustrations</RouterLink>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/traditional">Traditional</RouterLink>
