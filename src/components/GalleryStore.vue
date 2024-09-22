@@ -60,7 +60,7 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   max-width: 80rem;
   margin: 5rem auto;
   padding: 0 5rem;
