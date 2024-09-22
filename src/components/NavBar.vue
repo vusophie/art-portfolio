@@ -1,22 +1,38 @@
-import { RouterLink, RouterView } from 'vue-router'
-
 <template>
-    <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/traditional">Traditional</RouterLink>
-        <RouterLink to="/digital">Digital</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-    </nav>
+    <CContainer class="navbar">
+        <p class="title">Sophie Illustrations</p>
+        <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/traditional">Traditional</RouterLink>
+            <RouterLink to="/digital">Digital</RouterLink>
+            <RouterLink to="/contact">Contact</RouterLink>
+            <RouterLink to="/about">About</RouterLink>
+        </nav>
+    </CContainer>
+    
     <RouterView />
 </template>
 
 <style>
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+        transform: rotate(-12deg);
+    }
+
     nav {
+        display: flex;
+        justify-content: space-around;
         width: 100%;
         font-size: 12px;
         text-align: center;
-        margin-top: 2rem;
     }
   
     nav a.router-link-exact-active {
@@ -36,16 +52,4 @@ import { RouterLink, RouterView } from 'vue-router'
     nav a:first-of-type {
         border: 0;
     }
-
-    /* @media (min-width: 1024px) {
-        nav {
-            text-align: left;
-            margin-left: -1rem;
-            font-size: 1rem;
-
-            padding: 1rem 0;
-            margin-top
-            : 1rem;
-        }
-    } */
 </style>
