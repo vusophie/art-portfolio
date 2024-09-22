@@ -39,9 +39,9 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
     },
     computed: {
       filteredPhotos() {
-        if (this.filterTab === 'home') {
-          return this.photos;
-        }
+        // if (this.filterTab === '') {
+        //   return this.photos;
+        // }
         return this.photos.filter(photo => photo.type === this.filterTab);
       },
     },

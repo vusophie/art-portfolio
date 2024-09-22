@@ -1,0 +1,14 @@
+[
+    {
+        "aboutPage": {
+            "title": "SOPHIE VU / Visual artist",
+            "description": "I'm a visual artist based in Toronto. My work ranges from abstract art to character design.",
+            "work": {
+                "name": "name",
+                "tool": "tool",
+                "location": "location",
+                "year": "year"
+            }
+        }
+    }
+]
