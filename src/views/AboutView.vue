@@ -14,6 +14,7 @@
 
 <style>
 .about {
+  margin-top: 20vh;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;

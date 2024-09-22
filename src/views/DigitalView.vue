@@ -20,6 +20,7 @@
 <style>
 @media (min-width: 1024px) {
   .digital {
+    margin-top: 13vh;
     min-height: 70vh;
     display: flex;
     align-items: center;
