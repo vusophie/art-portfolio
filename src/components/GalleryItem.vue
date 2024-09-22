@@ -2,9 +2,17 @@
   <div class="gallery-item">
     <div class="gallery-panel">
       <RouterLink :to="{ name: 'image', params: { id: id } }">
-        <img :src="thumbnail" :alt="title" @error="handleImageError">
+        <div class="image-container">
+          <img :src="thumbnail" :alt="title" @error="handleImageError">
+          <div class="overlay">
+            <div class="overlay-content">
+              <span class="title">{{ title }} / </span>
+              <span class="tools">{{ description }}</span>
+            </div>
+          </div>
+        </div>
       </RouterLink>
-    </div>
+      </div>
   </div>
 </template>
 
@@ -43,4 +51,33 @@ export default {
   height: 100%;
   object-fit: cover;
 }
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(181, 52, 255, 0.9); /* Slightly transparent purple */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
 </style>
