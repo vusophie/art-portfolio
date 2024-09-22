@@ -23,10 +23,6 @@
   text-align: left;
 }
 
-CContainer {
-  padding: 20px;
-}
-
 .left {
   flex-basis: 60%;
   background-color: #fff; /* White background for left container */
@@ -42,22 +38,9 @@ CContainer {
   text-align: center;
 }
 
-.title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
 .contact {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-a {
-  color: #007bff; /* Link color */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 </style>
