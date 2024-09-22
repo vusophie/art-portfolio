@@ -38,22 +38,8 @@
   text-align: center;
 }
 
-.title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
 .contact {
   font-size: 20px;
   margin-bottom: 20px;
-}
-
-a {
-  color: #007bff; /* Link color */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 </style>
