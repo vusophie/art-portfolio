@@ -21,6 +21,7 @@
     align-items: center;
     background: white;
     position: fixed;
+    padding-top: 10vh;
     top: 0;
     left: 0;
     transform: translate3d(0, 0, 0);
@@ -36,10 +37,12 @@
 .title {
   padding-top: 3vh;
   padding-bottom: 5vh;
-  width: 100%;
+  max-width: 25vh;
   text-align: center;
   margin-bottom: 1rem;
   transform: rotate(-10deg);
+  text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -48,6 +51,7 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
+  padding: 10px;
 }
 
 nav a {
