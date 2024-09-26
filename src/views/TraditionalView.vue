@@ -20,7 +20,7 @@
 <style>
 @media (min-width: 1024px) {
   .traditional {
-    margin-top: 10vh;
+    margin-top: 40vh;
     min-height: 90vh;
     display: flex;
     align-items: center;

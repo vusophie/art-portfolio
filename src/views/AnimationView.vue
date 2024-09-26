@@ -20,7 +20,7 @@
 <style>
 @media (min-width: 1024px) {
   .animation {
-    margin-top: 13vh;
+    margin-top: 40vh;
     min-height: 70vh;
     display: flex;
     align-items: center;
