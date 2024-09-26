@@ -6,7 +6,9 @@
       "filename": {
         "simplified": "marshmallo.jpg",
         "original": "/marshmallo.jpg",
-        "thumbnail": "/thumbnails/marshmallo.jpg"
+        "thumbnail": "/thumbnails/marshmallo.jpg",
+        "second": "/marshmallo.jpg",
+        "third": "/marshmallo.jpg"
       },
       "description": {
         "tools": "NOT MY IMAGE",
@@ -20,7 +22,9 @@
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg"
+          "thumbnail": "/thumbnails/marshmallo.jpg",
+          "second": "/marshmallo.jpg",
+          "third": "/marshmallo.jpg"
         },
         "description": {
           "tools": "NOT MY IMAGE",
@@ -34,7 +38,9 @@
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg"
+          "thumbnail": "/thumbnails/marshmallo.jpg",
+          "second": "/marshmallo.jpg",
+          "third": "/marshmallo.jpg"
         },
         "description": {
           "tools": "NOT MY IMAGE",
@@ -48,7 +54,9 @@
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg"
+          "thumbnail": "/thumbnails/marshmallo.jpg",
+          "second": "/marshmallo.jpg",
+          "third": "/marshmallo.jpg"
         },
         "description": {
           "tools": "NOT MY IMAGE",
@@ -62,7 +70,9 @@
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg"
+          "thumbnail": "/thumbnails/marshmallo.jpg",
+          "second": "/marshmallo.jpg",
+          "third": "/marshmallo.jpg"
         },
         "description": {
           "tools": "NOT MY IMAGE",
@@ -76,7 +86,9 @@
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg"
+          "thumbnail": "/thumbnails/marshmallo.jpg",
+          "second": "/marshmallo.jpg",
+          "third": "/marshmallo.jpg"
         },
         "description": {
           "tools": "NOT MY IMAGE",
@@ -90,7 +102,9 @@
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg"
+          "thumbnail": "/thumbnails/marshmallo.jpg",
+          "second": "/marshmallo.jpg",
+          "third": "/marshmallo.jpg"
         },
         "description": {
           "tools": "NOT MY IMAGE",
