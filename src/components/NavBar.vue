@@ -2,12 +2,12 @@
     <CContainer 
       class="navbar"
       :class="{ 'navbar--hidden': !showNavbar }">
-      <RouterLink to="/" class="title">Sophie Illustrations</RouterLink>
+      <RouterLink to="/" class="title"><i>SOPHIE ILLUSTRATIONS</i></RouterLink>
       <nav>
-        <RouterLink to="/animation">ANIMATION</RouterLink>
-        <RouterLink to="/traditional">TRADITIONAL</RouterLink>
-        <RouterLink to="/digital">DIGITAL</RouterLink>
-        <RouterLink to="/about">ABOUT</RouterLink>
+        <RouterLink class="sublink" to="/animation">ANIMATION</RouterLink>
+        <RouterLink class="sublink" to="/traditional">TRADITIONAL</RouterLink>
+        <RouterLink class="sublink" to="/digital">DIGITAL</RouterLink>
+        <RouterLink class="sublink" to="/about">ABOUT</RouterLink>
       </nav>
     </CContainer>
     <RouterView />
@@ -43,6 +43,9 @@
   transform: rotate(-10deg);
   text-decoration: none;
   color: black;
+  font-family: 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 nav {
@@ -59,6 +62,11 @@ nav a {
   color: black;
   font-size: 12px;
 }
+
+.sublink {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 100 !important;
+  }
 
 nav a:hover {
   color: purple !important;
