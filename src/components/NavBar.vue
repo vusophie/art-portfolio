@@ -63,11 +63,6 @@ nav a {
   font-size: 12px;
 }
 
-.sublink {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-weight: 100 !important;
-  }
-
 nav a:hover {
   color: purple !important;
 }
