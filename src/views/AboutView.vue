@@ -19,8 +19,8 @@
   display: flex;
   justify-content: space-between;
   align-items: left;
-  background-color: #f5f5f5; /* Light grey background */
   padding: 20px;
+  margin-top: 60vh;
   text-align: left;
 }
 
@@ -28,14 +28,12 @@
   flex-basis: 60%;
   background-color: #fff; /* White background for left container */
   padding: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .right {
   flex-basis: 30%;
   background-color: #fff; /* White background for right container */
   padding: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: center;
 }
 
