@@ -39,13 +39,12 @@
 
 <style>
   .image {
-    margin-top: 20vh;
+    margin-top: 60vh;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    background-color: #f5f5f5;
     padding: 20px;
   }
 </style>
