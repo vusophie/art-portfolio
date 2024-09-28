@@ -10,7 +10,11 @@
         <RouterLink class="sublink" to="/about">ABOUT</RouterLink>
       </nav>
     </CContainer>
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </RouterView>
   </template>
   
   <style>
@@ -69,6 +73,16 @@ nav a:hover {
 
 nav a:visited {
   color: black;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.55s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
   
