@@ -31,12 +31,10 @@
       </p>
     </CContainer>
     <CContainer fluid lg class="right">
-      <div class="contact-info">
-        <p><strong>Sophie Illustration</strong></p>
-        <p class="contact"><strong>CONTACT</strong></p>
-        <p><a href="https://www.linkedin.com/in/vu-sophie/" target="_blank">LinkedIn</a></p>
-        <p><a href="https://www.instagram.com/soupvu" target="_blank">Instagram</a></p>
-      </div>
+      <p class="contact-title"><strong>Sophie Illustrations</strong></p>
+      <p><small><strong>CONTACT</strong></small></p>
+      <p><small><a href="https://www.linkedin.com/in/vu-sophie/" target="_blank">LinkedIn</a></small></p>
+      <p><small><a href="https://www.instagram.com/soupvu" target="_blank">Instagram</a></small></p>
     </CContainer>
   </CContainer>
 </template>
@@ -63,17 +61,12 @@
   padding: 40px;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;  
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.contact-title {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
-.contact {
-  font-size: 20px;
-  margin-bottom: 20px;
+p {
+  margin: 0;
 }
-
 </style>

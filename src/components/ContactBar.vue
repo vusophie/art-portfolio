@@ -1,46 +1,19 @@
 <template>
-    <nav>
-        <a href="https://www.linkedin.com/in/vu-sophie/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/vusophie/art-portfolio" target="_blank">GitHub</a>
-        <a href="mailto:sottvu@gmail.com">Email</a>
-    </nav>
+    <CContainer fluid lg>
+      <p class="contact-title"><strong>Sophie Illustrations</strong></p>
+      <p><small><strong>CONTACT</strong></small></p>
+      <p><small><a href="https://www.linkedin.com/in/vu-sophie/" target="_blank">LinkedIn</a></small></p>
+      <p><small><a href="https://www.instagram.com/soupvu" target="_blank">Instagram</a></small></p>
+    </CContainer>
 </template>
 
 <style>
-    nav {
-        width: 100%;
-        font-size: 12px;
-        text-align: center;
-        margin-top: 2rem;
-    }
-  
-    nav a.router-link-exact-active {
-        color: var(--color-text);
-    }
-    
-    nav a.router-link-exact-active:hover {
-        background-color: transparent;
-    }
-    
-    nav a {
-        display: inline-block;
-        padding: 0 1rem;
-        border-left: 1px solid var(--color-border);
-    }
-    
-    nav a:first-of-type {
-        border: 0;
+    .contact-title {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
     }
 
-    @media (min-width: 1024px) {
-        nav {
-            text-align: left;
-            margin-left: -1rem;
-            font-size: 1rem;
-
-            padding: 1rem 0;
-            margin-top
-            : 1rem;
-        }
+    p {
+    margin: 0;
     }
 </style>
