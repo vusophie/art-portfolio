@@ -1,7 +1,7 @@
 <template>
   <CContainer fluid class="about">
     <CContainer fluid sm class="left">
-      <h3>SOPHIE / Visual artist</h3>
+      <h3>{{aboutPage.title}}</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Proin vehicula ornare elit, in vestibulum neque dignissim nec. 
@@ -29,6 +29,36 @@
 
 
       </p>
+
+      <hr/>
+
+      <p>
+      <strong>Character Designs</strong>
+      <div>
+        // FOR NAMES IN ILLUSTRATIONS 
+      </div>
+
+      <strong>Abstract Illustrations</strong>
+      <div>
+        // FOR NAMES IN ILLUSTRATIONS 
+      </div>
+
+      <strong>Other Illustrations</strong>
+      <div>
+        // FOR NAMES IN ILLUSTRATIONS 
+      </div>
+
+      <strong>Animations</strong>
+      <div>
+        // FOR NAMES IN ILLUSTRATIONS 
+      </div>
+
+      <strong>Videos</strong>
+      <div>
+        // FOR NAMES IN ILLUSTRATIONS 
+      </div>
+      </p>
+
     </CContainer>
     <CContainer fluid lg class="right">
       <p class="contact-title"><strong>Sophie Illustrations</strong></p>
