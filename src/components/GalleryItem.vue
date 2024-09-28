@@ -6,8 +6,8 @@
           <img :src="thumbnail" :alt="title" @error="handleImageError">
           <div class="overlay">
             <div class="overlay-content">
-              <span class="title">{{ title }} / </span>
-              <span class="tools">{{ description }}</span>
+              <span class="hover-title">{{ title }} / </span>
+              <span class="hover-tools">{{ description }}</span>
             </div>
           </div>
         </div>
@@ -70,14 +70,22 @@ export default {
 }
 
 .overlay-content {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1em;
   color: white;
 }
 
 .image-container:hover .overlay {
   opacity: 1;
+}
+
+span {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 100 !important;
+  font-size: 1em;
 }
 
 </style>
