@@ -66,7 +66,7 @@
       {
         "id": 4,
         "title": "Marshmallo",
-        "type": "digital",
+        "type": "traditional",
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
@@ -82,7 +82,7 @@
       {
         "id": 5,
         "title": "Marshmallo",
-        "type": "digital",
+        "type": "traditional",
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
@@ -98,7 +98,7 @@
       {
         "id": 6,
         "title": "Marshmallo",
-        "type": "digital",
+        "type": "traditional",
         "filename": {
           "simplified": "marshmallo.jpg",
           "original": "/marshmallo.jpg",
