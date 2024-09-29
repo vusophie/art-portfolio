@@ -75,6 +75,10 @@ nav a:visited {
   color: black;
 }
 
+.router-link-active {
+  color: rgba(0, 59, 222, 1) !important;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.55s ease;
