@@ -1,0 +1,37 @@
+{
+  "contactBar": {
+    "title": "Sophie Illustrations",
+    "contact": "CONTACT",
+    "linkedin-msg": "www.linkedin.com/in/vu-sophie/",
+    "instagram-msg": "www.instagram.com/soupvu",
+    "email-msg": "sottvu@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/vu-sophie/",
+    "instagram": "https://www.instagram.com/soupvu",
+    "email": "mailto:sottvu@gmail.com"
+  },
+  "navBar": {
+    "title": "SOPHIE ILLUSTRATIONS",
+    "animation": "ANIMATION",
+    "traditional": "TRADITIONAL",
+    "digital": "DIGITAL",
+    "about": "ABOUT"
+  },
+  "aboutView": {
+    "title": "SOPHIE ILLUSTRATIONS",
+    "about-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula ornare elit, in vestibulum neque dignissim nec. Praesent tincidunt imperdiet neque sit amet porttitor. Curabitur auctor facilisis est nec accumsan. Praesent consectetur sem nisi, in tincidunt enim venenatis varius. Aenean vel dictum nibh, vitae rutrum est. In cursus ac lectus at auctor. Nunc sollicitudin diam iaculis arcu convallis, rutrum gravida purus pulvinar. In facilisis facilisis euismod.",
+    "tools": "Tools",
+    "tools-text": "Pellentesque vitae maximus magna, non laoreet leo. Morbi erat sapien, pharetra in massa eu, laoreet hendrerit enim. Curabitur suscipit molestie malesuada. Nam at nunc dui. Nunc sed ultricies lacus. Nulla id aliquet dolor, molestie sagittis nisi. In vel turpis a dui tincidunt vulputate ut sit amet metus. Etiam tempor urna justo, ut vehicula risus placerat id. Ut vel neque at dui maximus placerat. Sed molestie porttitor dolor, porttitor dapibus mauris bibendum ac. Pellentesque vitae luctus dolor. Pellentesque hendrerit, diam imperdiet cursus congue, felis nulla hendrerit odio, vitae fermentum risus massa posuere mi. Sed dapibus consequat libero, vel sodales lacus ornare non. Nulla eleifend nulla sit amet aliquam placerat.",
+    "character-design": "Character Designs",
+    "abstract-illustration": "Abstract Illustrations",
+    "other-illustration": "Other Illustrations",
+    "animations": "Animations",
+    "contact": {
+      "title": "Sophie Illustrations",
+      "contact": "CONTACT",
+      "email": "mailto:sottvu@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/vu-sophie/",
+      "email-msg": "sottvu@gmail.com",
+      "linkedin-msg": "www.linkedin.com/in/vu-sophie/"
+    }
+  }
+}
