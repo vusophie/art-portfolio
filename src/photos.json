@@ -110,5 +110,37 @@
           "tools": "NOT MY IMAGE",
           "url": "https://cdns-images.dzcdn.net"
         }
+      },
+      {
+        "id": 7,
+        "title": "Jellyfish",
+        "type": "animation",
+        "filename": {
+          "simplified": "jellyfish.gif",
+          "original": "/jellyfish.gif",
+          "thumbnail": "/thumbnails/jellyfish.gif",
+          "second": "/jellyfish.gif",
+          "third": "/jellyfish.gif"
+        },
+        "description": {
+          "tools": "NOT MY IMAGE",
+          "url": "https://cdns-images.dzcdn.net"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Jellyfish",
+        "type": "animation",
+        "filename": {
+          "simplified": "jellyfish.gif",
+          "original": "/jellyfish.gif",
+          "thumbnail": "/thumbnails/jellyfish.gif",
+          "second": "/jellyfish.gif",
+          "third": "/jellyfish.gif"
+        },
+        "description": {
+          "tools": "NOT MY IMAGE",
+          "url": "https://cdns-images.dzcdn.net"
+        }
       }
 ]
