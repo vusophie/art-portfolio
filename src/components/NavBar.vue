@@ -2,7 +2,7 @@
     <CContainer 
       class="navbar"
       :class="{ 'navbar--hidden': !showNavbar }">
-      <RouterLink to="/" class="title"><i>SOPHIE ILLUSTRATIONS</i></RouterLink>
+    <RouterLink to="/" class="title"><i>SOPHIE ILLUSTRATIONS</i></RouterLink>
       <nav>
         <RouterLink class="sublink" to="/animation">ANIMATION</RouterLink>
         <RouterLink class="sublink" to="/traditional">TRADITIONAL</RouterLink>
@@ -62,13 +62,13 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
   font-size: 12px;
 }
 
 nav a:hover {
-  color: purple !important;
+  color: rgba(0, 59, 222, 1) !important;
 }
 
 nav a:visited {

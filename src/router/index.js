@@ -5,8 +5,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'traditional',
-      component: () => import('../views/TraditionalView.vue')
+      redirect: '/traditional'
     },
     {
       path: '/traditional',
