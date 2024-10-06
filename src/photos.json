@@ -1,30 +1,29 @@
 [
     {
       "id": 0,
-      "title": "Marshmallo",
-      "type": "digital",
+      "title": "9 to 5",
+      "type": "traditional",
       "filename": {
-        "simplified": "marshmallo.jpg",
-        "original": "/marshmallo.jpg",
-        "thumbnail": "/thumbnails/marshmallo.jpg",
-        "second": "/marshmallo.jpg",
-        "third": "/marshmallo.jpg"
+        "simplified": "9-5.jpg",
+        "original": "/images/9-5.jpg",
+        "thumbnail": "/thumbnails/9-5.jpg",
+        "second": "/images/9-5.jpg",
+        "third": "/images/9-5.jpg"
       },
       "description": {
-        "tools": "NOT MY IMAGE",
-        "url": "https://cdns-images.dzcdn.net"
+        "tools": "Crayons, white paper"
       }
     },
     {
         "id": 1,
-        "title": "Marshmallo",
-        "type": "digital",
+        "title": "Sketch of Adam",
+        "type": "traditional",
         "filename": {
           "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/adam.jpg",
+          "thumbnail": "/thumbnails/adam.jpg",
+          "second": "/images/adam.jpg",
+          "third": "/images/adam.jpg"
         },
         "description": {
           "tools": "NOT MY IMAGE",
