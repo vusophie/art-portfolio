@@ -23,7 +23,6 @@
     margin: 40vh 0vh 20vh 0vh;
     display: flex;
     align-items: center;
-    
   }
 }
 </style>
