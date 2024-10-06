@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "vue": "^3.4.29",
-    "vue-i18n": "^9.14.1",
+    "vue-i18n": "^10.0.0",
     "vue-masonry": "^0.16.0",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
+    "@types/vue-i18n": "^7.0.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "vite": "^5.4.6"
   }
