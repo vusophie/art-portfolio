@@ -4,14 +4,11 @@
       "title": "9 to 5",
       "type": "traditional",
       "filename": {
-        "simplified": "9-5.jpg",
-        "original": "/images/9-5.jpg",
-        "thumbnail": "/thumbnails/9-5.jpg",
-        "second": "/images/9-5.jpg",
-        "third": "/images/9-5.jpg"
+        "original": "/images/9-5.jpg"
       },
       "description": {
-        "tools": "Crayons, white paper"
+        "tools": "crayons and sketch paper",
+        "more": "This drawing illustrates the monotony of a 9-5 job and how being aware of it can be mentally draining."
       }
     },
     {
@@ -19,47 +16,36 @@
         "title": "Sketch of Adam",
         "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/images/adam.jpg",
-          "thumbnail": "/thumbnails/adam.jpg",
-          "second": "/images/adam.jpg",
-          "third": "/images/adam.jpg"
+          "original": "/images/adam.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of my friend Adam after a night out."
         }
       },
       {
         "id": 2,
-        "title": "Marshmallo",
-        "type": "digital",
+        "title": "Avocado",
+        "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/avocado.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw parallels between a splitting headache and splitting open an avocado."
         }
       },
       {
         "id": 3,
-        "title": "Marshmallo",
-        "type": "digital",
+        "title": "Bath",
+        "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/bath.jpg",
+          "second": "/images/bath.jpg",
+          "third": "/images/bath.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper"
         }
       },
       {

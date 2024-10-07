@@ -8,7 +8,7 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
       :key="photo.id"
       :id="photo.id"
       :title="photo.title"
-      :thumbnail="photo.filename.thumbnail"
+      :photo="photo.filename.original"
       :description="photo.description.url" 
     />
   </div>
