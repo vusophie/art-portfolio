@@ -52,19 +52,18 @@ export default {
 
 .image-container {
   position: relative;
-  max-width: 32vw;
-  max-height: 32vh;
-  width: 100%;
-  height: 100%;
+  width: 25vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .responsive-image {
   width: 100%;
-  height: auto; 
-  display: block; 
-  max-height: none; 
-  object-fit: cover; 
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
@@ -83,7 +82,6 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1em;
   color: white;
 }
 

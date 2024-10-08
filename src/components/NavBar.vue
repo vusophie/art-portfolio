@@ -81,7 +81,7 @@ nav a:visited {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.55s ease;
+  transition: opacity 0.4s ease;
 }
 
 .fade-enter-from,
