@@ -1,146 +1,302 @@
 [
     {
       "id": 0,
-      "title": "Marshmallo",
-      "type": "digital",
+      "title": "9 to 5",
+      "type": "traditional",
       "filename": {
-        "simplified": "marshmallo.jpg",
-        "original": "/marshmallo.jpg",
-        "thumbnail": "/thumbnails/marshmallo.jpg",
-        "second": "/marshmallo.jpg",
-        "third": "/marshmallo.jpg"
+        "original": "/images/9-5.jpg"
       },
       "description": {
-        "tools": "NOT MY IMAGE",
-        "url": "https://cdns-images.dzcdn.net"
+        "tools": "crayons and sketch paper",
+        "more": "This drawing illustrates the monotony of a 9-5 job and how being aware of it can be mentally draining."
       }
     },
     {
         "id": 1,
-        "title": "Marshmallo",
-        "type": "digital",
+        "title": "Sketch of Adam",
+        "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/adam.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of my friend Adam after a night out."
         }
       },
       {
         "id": 2,
-        "title": "Marshmallo",
-        "type": "digital",
+        "title": "Avocado",
+        "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/avocado.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw parallels between a splitting headache and splitting open an avocado."
         }
       },
       {
         "id": 3,
-        "title": "Marshmallo",
-        "type": "digital",
+        "title": "Bath",
+        "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/bath.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "I was testing out different crayons."
         }
       },
       {
         "id": 4,
-        "title": "Marshmallo",
+        "title": "Bassist",
         "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/bassist.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of my friend testing out a rental bass."
         }
       },
       {
         "id": 5,
-        "title": "Marshmallo",
+        "title": "Big Eye",
         "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/big_eye.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "I was testing out blending with crayons."
         }
       },
       {
         "id": 6,
-        "title": "Marshmallo",
+        "title": "Birth",
         "type": "traditional",
         "filename": {
-          "simplified": "marshmallo.jpg",
-          "original": "/marshmallo.jpg",
-          "thumbnail": "/thumbnails/marshmallo.jpg",
-          "second": "/marshmallo.jpg",
-          "third": "/marshmallo.jpg"
+          "original": "/images/birth.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "POV: you are being birthed."
         }
       },
       {
         "id": 7,
-        "title": "Jellyfish",
-        "type": "animation",
+        "title": "Bleeding Out",
+        "type": "traditional",
         "filename": {
-          "simplified": "jellyfish.gif",
-          "original": "/jellyfish.gif",
-          "thumbnail": "/thumbnails/jellyfish.gif",
-          "second": "/jellyfish.gif",
-          "third": "/jellyfish.gif"
+          "original": "/images/bleeding_out.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to illustrated extreme physical exhaustion."
         }
       },
       {
         "id": 8,
-        "title": "Jellyfish",
-        "type": "animation",
+        "title": "Blindsided",
+        "type": "traditional",
         "filename": {
-          "simplified": "jellyfish.gif",
-          "original": "/jellyfish.gif",
-          "thumbnail": "/thumbnails/jellyfish.gif",
-          "second": "/jellyfish.gif",
-          "third": "/jellyfish.gif"
+          "original": "/images/blindsided.jpg"
         },
         "description": {
-          "tools": "NOT MY IMAGE",
-          "url": "https://cdns-images.dzcdn.net"
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to illustrated the concept of one being blindsided by another person."
+        }
+      },
+      {
+        "id": 9,
+        "title": "Blue Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/blue_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This was my first attempt with colored crayons."
+        }
+      },
+      {
+        "id": 10,
+        "title": "Card Design",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/card_design.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of concept art for a card design."
+        }
+      },
+      {
+        "id": 11,
+        "title": "Character Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/character_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of concept art for a character design."
+        }
+      },
+      {
+        "id": 12,
+        "title": "Hotline Miami Chicken Guy",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/chicken_guy.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of fanart for the chicken guy in Hotline Miami."
+        }
+      },
+      {
+        "id": 13,
+        "title": "Cloud Lady",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/cloud_lady.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of the auto-generated key words: cloud, house, cape."
+        }
+      },
+      {
+        "id": 14,
+        "title": "Color Study 1",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/color_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I was testing out color crayons."
+        }
+      },
+      {
+        "id": 15,
+        "title": "Color Study 2",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/color_study2.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is bad."
+        }
+      },
+      {
+        "id": 16,
+        "title": "Sketch of my old coworker",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/coworker.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I sketched my old coworker from Capco."
+        }
+      },
+      {
+        "id": 17,
+        "title": "Desires",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/desires.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I quickly sketched my short-term desires at the time."
+        }
+      },
+      {
+        "id": 18,
+        "title": "Dog Won't Stop Moving",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/dog_wont_stop_moving.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I was sketching at the park with my friend, and this owner's dog wouldn't sit still for my drawing."
+        }
+      },
+      {
+        "id": 19,
+        "title": "Drowning",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/drowning.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to illustrate being engulfed by relentless waves of emotion."
+        }
+      },
+      {
+        "id": 20,
+        "title": "Faces",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/faces.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch after sharpening a brown crayon."
+        }
+      },
+      {
+        "id": 21,
+        "title": "Firestone",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/firestone.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I was using new crayons."
+        }
+      },
+      {
+        "id": 22,
+        "title": "Frog Fighter Character",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/frog_fighter.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of a frog character design."
+        }
+      },
+      {
+        "id": 23,
+        "title": "Frog Warrior Character",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/frog_warrior.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a quick sketch of a frog character design."
+        }
+      },
+      {
+        "id": 24,
+        "title": "Two Girls Entering An Uber",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/girls_entering_uber.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I decided to sketch people I saw on Queen Street West."
         }
       }
 ]

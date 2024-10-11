@@ -8,7 +8,3 @@ import ContactBar from './components/ContactBar.vue'
   <ContactBar />      
 </template>
 
-<style scoped>
-html {  
-}
-</style>

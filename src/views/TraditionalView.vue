@@ -18,11 +18,10 @@
 </script>
 
 <style>
-@media (min-width: 1024px) {
   .traditional {
     margin: 40vh 0vh 20vh 0vh;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
-}
 </style>

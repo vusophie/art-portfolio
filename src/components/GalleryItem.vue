@@ -3,7 +3,7 @@
     <div class="gallery-panel">
       <RouterLink :to="{ name: 'image', params: { id: id } }">
         <div class="image-container">
-          <img :src="thumbnail" :alt="title" @error="handleImageError">
+          <img :src="photo" :alt="title" @error="handleImageError" class="responsive-image">
           <div class="overlay">
             <div class="overlay-content">
               <span class="hover-title">{{ title }} / </span>
@@ -12,7 +12,7 @@
           </div>
         </div>
       </RouterLink>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
       type: String,
       required: true,
     },
-    thumbnail: {
+    photo: {
       type: String,
       required: true,
     },
@@ -46,16 +46,24 @@ export default {
 </script>
 
 <style scoped>
-.gallery-panel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.gallery-panel {
+  position: relative;
 }
 
 .image-container {
   position: relative;
+  width: 25vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.responsive-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
@@ -63,8 +71,8 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 99%;
-  background-color: rgba(0, 59, 222, 0.9); 
+  height: 100%;
+  background-color: rgba(0, 59, 222, 0.9);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -74,7 +82,6 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1em;
   color: white;
 }
 
@@ -83,9 +90,6 @@ export default {
 }
 
 span {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-weight: 100 !important;
   font-size: 1em;
 }
-
 </style>
