@@ -8,7 +8,7 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
       :key="photo.id"
       :id="photo.id"
       :title="photo.title"
-      :thumbnail="photo.filename.thumbnail"
+      :photo="photo.filename.original"
       :description="photo.description.url" 
     />
   </div>
@@ -59,10 +59,9 @@ Contains the logic that ensures that the displayed galleryItems are in the corre
 <style scoped>
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  grid-gap: 2rem;
-  max-width: 80rem;
-  margin: 5rem auto;
-  padding: 0 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2em;
+  row-gap: 2em;
+  max-width: 90rem;
 }
 </style>
