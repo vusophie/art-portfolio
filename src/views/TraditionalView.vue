@@ -19,7 +19,7 @@
 
 <style>
   .traditional {
-    margin: 40vh 0vh 20vh 0vh;
+    margin: 50vh 0vh 20vh 0vh;
     display: flex;
     justify-content: center;
     align-items: center;

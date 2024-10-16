@@ -18,11 +18,11 @@
 </script>
 
 <style>
-@media (min-width: 1024px) {
   .digital {
-    margin: 40vh 0vh 20vh 0vh;
+    margin: 50vh 0vh 20vh 0vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+
   }
-}
 </style>

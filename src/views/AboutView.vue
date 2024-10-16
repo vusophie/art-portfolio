@@ -4,14 +4,9 @@
       <h3>SOPHIE / Visual artist</h3>
       <div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Proin vehicula ornare elit, in vestibulum neque dignissim nec. 
-          Praesent tincidunt imperdiet neque sit amet porttitor. 
-          Curabitur auctor facilisis est nec accumsan. Praesent consectetur 
-          sem nisi, in tincidunt enim venenatis varius. Aenean vel dictum 
-          nibh, vitae rutrum est. In cursus ac lectus at auctor. Nunc 
-          sollicitudin diam iaculis arcu convallis, rutrum gravida 
-          purus pulvinar. In facilisis facilisis euismod.
+          Hey! I’m Sophie, and I love creating art in my spare time. 
+          I mainly draw characters in a cartoon style. 
+          While I primarily work with traditional art, I’m also exploring digital art and animation.
         </p>
       </div>
       
@@ -21,22 +16,12 @@
         <h3>Tools</h3>
 
         <p>
-          Pellentesque vitae maximus magna, non laoreet leo. 
-          Morbi erat sapien, pharetra in massa eu, laoreet hendrerit 
-          enim. Curabitur suscipit molestie malesuada. Nam at nunc dui. 
-          Nunc sed ultricies lacus. Nulla id aliquet dolor, molestie 
-          sagittis nisi. In vel turpis a dui tincidunt vulputate ut sit 
-          amet metus. Etiam tempor urna justo, ut vehicula risus placerat 
-          id. Ut vel neque at dui maximus placerat. Sed molestie porttitor 
-          dolor, porttitor dapibus mauris bibendum ac. Pellentesque vitae 
-          luctus dolor. Pellentesque hendrerit, diam imperdiet cursus congue, 
-          felis nulla hendrerit odio, vitae fermentum risus massa posuere mi. 
-          Sed dapibus consequat libero, vel sodales lacus ornare non. Nulla 
-          eleifend nulla sit amet aliquam placerat.
+          I use colored crayons for my paper drawings.
+          For my digital work, I’m using Procreate.
         </p>
       </div>
 
-      <div>
+      <!-- <div>
         <h3>Character Designs</h3>
         <div>
           // FOR NAMES IN ILLUSTRATIONS 
@@ -56,7 +41,7 @@
         <div>
           // FOR NAMES IN ILLUSTRATIONS 
         </div>
-      </div>
+      </div> -->
     </CContainer>
     <CContainer fluid lg class="right">
       <p class="contact-title"><strong>Sophie Illustrations</strong></p>

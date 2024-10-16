@@ -6,8 +6,7 @@
           <img :src="photo" :alt="title" @error="handleImageError" class="responsive-image">
           <div class="overlay">
             <div class="overlay-content">
-              <span class="hover-title">{{ title }} / </span>
-              <span class="hover-tools">{{ description }}</span>
+              <span class="hover-title">{{ title }} </span>
             </div>
           </div>
         </div>
@@ -52,8 +51,8 @@ export default {
 
 .image-container {
   position: relative;
-  width: 25vw;
-  height: 50vh;
+  width: 20vw;
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,9 +71,9 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 59, 222, 0.9);
+  background-color: rgba(0, 59, 222, 0.8);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
 .overlay-content {
@@ -89,7 +88,8 @@ export default {
   opacity: 1;
 }
 
-span {
+.hover-title {
+  margin-top: 3vh;
   font-size: 1em;
 }
 </style>

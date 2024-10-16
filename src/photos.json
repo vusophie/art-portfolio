@@ -298,5 +298,450 @@
           "tools": "crayons and sketch paper",
           "more": "I decided to sketch people I saw on Queen Street West."
         }
+      },
+      {
+        "id": 25,
+        "title": "Gold Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/gold_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This was a prompt for Inktober 2023."
+        }
+      },
+      {
+        "id": 26,
+        "title": "Hand Practice",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/hand_practice.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to do a study of hands and eyes."
+        }
+      },
+      {
+        "id": 27,
+        "title": "Jeff Bezos",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/jeff_bezos.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "Jeff Bezos as Saitama."
+        }
+      },
+      {
+        "id": 28,
+        "title": "Hug",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/hug.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to illustrate the feeling of needing a hug."
+        }
+      },
+      {
+        "id": 29,
+        "title": "Walls",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/incomplete_angel_wall.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw the feeling of lowering one's walls."
+        }
+      },
+      {
+        "id": 30,
+        "title": "Laundry Lady",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/laundry_lady.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I drew this during a Drink&Draw session."
+        }
+      },
+      {
+        "id": 31,
+        "title": "Light Purple",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/light_purple.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a very simple sketch that I should really complete."
+        }
+      },
+      {
+        "id": 32,
+        "title": "Lizard Angel",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/lizard_angel.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw someone holding a skull."
+        }
+      },
+      {
+        "id": 33,
+        "title": "Melting",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/melting.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw extreme exhaustion."
+        }
+      },
+      {
+        "id": 34,
+        "title": "Mermaid",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/mermaid.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I like the way the scales turned out."
+        }
+      },
+      {
+        "id": 35,
+        "title": "Merry Go Round",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/merry_go_round.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to illustrate how I feel about routines."
+        }
+      },
+      {
+        "id": 36,
+        "title": "Mouse Man",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/mouse_man.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is an interesting character design that I want to reuse."
+        }
+      },
+      {
+        "id": 37,
+        "title": "Posture Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/posture_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to practice anatomy."
+        }
+      },
+      {
+        "id": 38,
+        "title": "Pot Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/pot_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I saw plant pots and created these characters from them."
+        }
+      },
+      {
+        "id": 39,
+        "title": "Colors Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/primary_colors_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to use different shades of the colors I usually use."
+        }
+      },
+      {
+        "id": 40,
+        "title": "Rei",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/rei.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I drew Rei from Evangelion."
+        }
+      },
+      {
+        "id": 41,
+        "title": "Dark Blue",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/sad_dark_blue.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to illustrate substance abuse."
+        }
+      },
+      {
+        "id": 42,
+        "title": "Sketchy",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/sketchy.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw the feeling of brain fog."
+        }
+      },
+      {
+        "id": 43,
+        "title": "Social Anxiety",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/social_anxiety.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw what social anxiety can feel like."
+        }
+      },
+      {
+        "id": 44,
+        "title": "Stoner Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/stoner_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I drew this when I used to smoke a lot of weed."
+        }
+      },
+      {
+        "id": 45,
+        "title": "Stoner",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/stoner.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw when I was high."
+        }
+      },
+      {
+        "id": 46,
+        "title": "Street Guy",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/street_guy.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I drew a guy I saw on the street."
+        }
+      },
+      {
+        "id": 47,
+        "title": "Tall Lady",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/tall_lady.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is an old character design."
+        }
+      },
+      {
+        "id": 48,
+        "title": "Texture Study",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/texture_study.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I was exploring drawing textures."
+        }
+      },
+      {
+        "id": 49,
+        "title": "Three-Eyed Guy",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/three_eyed_guy.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is an illustratino of substance abusive."
+        }
+      },
+      {
+        "id": 50,
+        "title": "Turquoise Snakes",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/turquoise_snakes.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "I wanted to draw demonic snakes."
+        }
+      },
+      {
+        "id": 51,
+        "title": "Wizard",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/wizard.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is my friend's character for his book."
+        }
+      },
+      {
+        "id": 52,
+        "title": "Yolanda",
+        "type": "traditional",
+        "filename": {
+          "original": "/images/yolanda.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper",
+          "more": "This is a sketch of Yolanda."
+        }
+      },
+      {
+        "id": 53,
+        "title": "Soup",
+        "type": "animation",
+        "filename": {
+          "original": "/videos/soup.gif"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "This is my first animation!"
+        }
+      },
+      {
+        "id": 54,
+        "title": "Blue Fire",
+        "type": "animation",
+        "filename": {
+          "original": "/videos/blue_fire.gif"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "This is inspired by a tutorial online."
+        }
+      },
+      {
+        "id": 55,
+        "title": "Plants And Flowers",
+        "type": "animation",
+        "filename": {
+          "original": "/videos/plants.gif"
+        },
+        "description": {
+          "tools": "Capcut and Flipbook",
+          "more": "This is an attempt at stopmotion."
+        }
+      },
+      {
+        "id": 56,
+        "title": "Biking",
+        "type": "digital",
+        "filename": {
+          "original": "/images/biking_with_ex.png"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "This is my second drawing on an iPad."
+        }
+      },
+      {
+        "id": 57,
+        "title": "Working At A Coffeeshop",
+        "type": "digital",
+        "filename": {
+          "original": "/images/coffee_shop_work.png"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "I was testing out different fuchsia shades."
+        }
+      },
+      {
+        "id": 58,
+        "title": "Facemasks",
+        "type": "digital",
+        "filename": {
+          "original": "/images/facemasks_with_ex.png"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "This is my first drawing on an iPad."
+        }
+      },
+      {
+        "id": 59,
+        "title": "Ghost Design",
+        "type": "digital",
+        "filename": {
+          "original": "/images/ghost_design.png"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "I drew this during a trip to Montreal with friends."
+        }
+      },
+      {
+        "id": 60,
+        "title": "Karaoke With Friends",
+        "type": "digital",
+        "filename": {
+          "original": "/images/karaoke.png"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "I had issues drawing the couch."
+        }
+      },
+      {
+        "id": 61,
+        "title": "Moving Day",
+        "type": "digital",
+        "filename": {
+          "original": "/images/moving.png"
+        },
+        "description": {
+          "tools": "Procreate",
+          "more": "I drew this a bit too quickly haha."
+        }
       }
+      
 ]
