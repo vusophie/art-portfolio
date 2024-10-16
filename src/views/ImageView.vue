@@ -8,8 +8,6 @@
     </div>
     <div class="img-display">
       <img :src="photo.filename.original" alt="photo.title" class="responsive-image">
-      <img :src="photo.filename.second" alt="photo.title" v-if="photo.filename.second" class="responsive-image">
-      <img :src="photo.filename.third" alt="photo.title" v-if="photo.filename.third" class="responsive-image">
     </div>
   </CContainer>
 </template>
@@ -41,7 +39,6 @@ export default {
   flex-direction: column; 
   justify-content: flex-start;
   align-items: center; 
-  padding: 20px;
 }
 
 .img-info {
@@ -73,10 +70,11 @@ export default {
 }
 
 .responsive-image {
-  width: 100%;
-  height: auto; 
   display: block; 
   object-fit: cover; 
   margin-bottom: 1em; 
+  max-height: 90vh;
+  width: auto;
+
 }
 </style>

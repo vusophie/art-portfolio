@@ -58,7 +58,7 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  padding: 10px;
+  margin: 10vh;
 }
 
 nav a {
