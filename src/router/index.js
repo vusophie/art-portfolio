@@ -5,16 +5,13 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/traditional'
+      name: 'default',
+      component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/traditional',
-      name: 'traditional',
-      component: () => import('../views/TraditionalView.vue')
-    },{
-      path: '/animation',
-      name: 'animation',
-      component: () => import('../views/AnimationView.vue')
+      path: '/sketchbook',
+      name: 'sketchbook',
+      component: () => import('../views/SketchbookView.vue')
     },
     {
       path: '/digital',
@@ -22,17 +19,16 @@ const router = createRouter({
       component: () => import('../views/DigitalView.vue')
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/ContactView.vue')
     },
     {
       path: '/image/:id',
       name: 'image',
       component: () => import('../views/ImageView.vue')
     }
-    
   ]
 })
 
-export default router
+export default router;

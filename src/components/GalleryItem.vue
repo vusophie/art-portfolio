@@ -45,9 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.gallery-panel {
-  position: relative;
-}
 
 .image-container {
   position: relative;

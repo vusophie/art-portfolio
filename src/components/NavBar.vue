@@ -1,122 +1,69 @@
 <template>
-    <CContainer 
-      class="navbar"
-      :class="{ 'navbar--hidden': !showNavbar }">
-    <RouterLink to="/" class="title"><i>SOPHIE ILLUSTRATIONS</i></RouterLink>
-      <nav>
-        <RouterLink class="sublink" to="/animation">ANIMATION</RouterLink>
-        <RouterLink class="sublink" to="/traditional">TRADITIONAL</RouterLink>
-        <RouterLink class="sublink" to="/digital">DIGITAL</RouterLink>
-        <RouterLink class="sublink" to="/about">ABOUT</RouterLink>
-      </nav>
-    </CContainer>
-    <RouterView v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </RouterView>
-  </template>
-  
-  <style>
-  .navbar {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    position: fixed;
-    padding-top: 10vh;
-    top: 0;
-    left: 0;
-    transform: translate3d(0, 0, 0);
-    transition: 0.1s all ease-out;
-    z-index: 1000;
-}
+  <CContainer 
+    class="navbar"
+    :class="{ 'navbar--hidden': !showNavbar }">
+    <nav>
+      <RouterLink class="sublink" to="/" @click="logClick"> <i>Sophie Illustrations</i></RouterLink>
+      <RouterLink class="sublink" to="/sketchbook" @click="logClick">Sketchbook</RouterLink>
+      <RouterLink class="sublink" to="/digital" @click="logClick">Digital</RouterLink>
+      <RouterLink class="sublink" to="/contact" @click="logClick">Contact</RouterLink>
+    </nav>
+  </CContainer>
+  <keep-alive>
+    <RouterView />
+  </keep-alive>
+</template>
 
-.navbar--hidden {
-  box-shadow: none;
-  transform: translate3d(0, -100%, 0);
-}
+<script>
+import { RouterView } from 'vue-router';
 
-.title {
-  padding-top: 3vh;
-  padding-bottom: 5vh;
-  max-width: 25vh;
-  text-align: center;
-  margin-bottom: 1rem;
-  transform: rotate(-10deg);
-  text-decoration: none;
-  color: black;
-  font-family: 'Times New Roman', serif;
-  font-weight: 600;
-  font-size: 1.5em;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin: 10vh;
-}
-
-nav a {
-  text-decoration: none !important;
-  color: black;
-  font-size: 12px;
-}
-
-nav a:hover {
-  color: rgba(0, 59, 222, 1) !important;
-}
-
-nav a:visited {
-  color: black;
-}
-
-.router-link-active {
-  color: rgba(0, 59, 222, 1) !important;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.4s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>
-  
-  <script>
-  export default {
-    data() {
-      return {
+export default {
+  data() {
+    return {
       showNavbar: true,
       lastScrollPosition: 0
     };
   },
   mounted() {
+    console.log("Navbar component mounted.");
     window.addEventListener('scroll', this.onScroll);
+
+    // Example: you can directly log clicks on navbar
+    this.$router.beforeEach((to, from, next) => {
+      console.log(`Before navigating to: ${to.fullPath}`);
+      next();
+    });
+    this.$router.afterEach((to, from) => {
+      console.log(`After navigating to: ${to.fullPath}`);
+    });
   },
   beforeDestroy() {
+    console.log("Navbar component is about to be destroyed.");
     window.removeEventListener('scroll', this.onScroll);
   },
   methods: {
     onScroll() {
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      console.log(`Current scroll position: ${currentScrollPosition}`);
+      
       if (currentScrollPosition < 0) {
+        console.log("Scroll position is less than zero, returning.");
         return;
       }
+
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+        console.log("Scroll difference is less than 60px, skipping navbar update.");
         return;
       }
+
       this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+      console.log(`Navbar visibility: ${this.showNavbar ? 'Visible' : 'Hidden'}`);
+
       this.lastScrollPosition = currentScrollPosition;
+    },
+    logClick(event) {
+      console.log(`Link clicked: ${event.target.textContent}`);
     }
   }
 };
 </script>
-  
