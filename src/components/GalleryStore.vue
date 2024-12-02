@@ -2,66 +2,61 @@
 Contains the logic that ensures that the displayed galleryItems are in the correct tab.
 */
 <template>
-  <div class="gallery-grid"> 
-    <GalleryItem 
-      v-for="photo in filteredPhotos"
-      :key="photo.id"
-      :id="photo.id"
-      :title="photo.title"
-      :photo="photo.filename.original"
-      :description="photo.description.url" 
-    />
-  </div>
+    <div class="gallery-grid"> 
+      <GalleryItem 
+        v-for="photo in filteredPhotos"
+        :key="photo.id"
+        :id="photo.id"
+        :title="photo.title"
+        :photo="photo.filename.original"
+        :description="photo.description.url" 
+      />
+    </div>
 </template>
 
-  <script>
-  import photos from '../photos.json';
-  import GalleryItem from './GalleryItem.vue';
+<script>
+import photos from '../photos.json';
+import GalleryItem from './GalleryItem.vue';
 
-  console.log('test');
-  
-  export default {
-    name: 'GalleryStore',
-    components: {
-      GalleryItem,
+export default {
+  name: 'GalleryStore',
+  components: {
+    GalleryItem,
+  },
+  props: {
+    initialTab: {
+      type: String,
+      required: true,
     },
-    props: {
-      initialTab: {
-        type: String,
-        required: true,
-      },
+  },
+  data() {
+    return {
+      filterTab: this.initialTab,
+      photos,
+    };
+  },
+  computed: {
+    filteredPhotos() {
+      return this.photos.filter(photo => photo.type === this.filterTab);
     },
-    data() {
-      return {
-        filterTab: this.initialTab,
-        photos,
-      };
+  },
+  watch: {
+    filteredPhotos(newPhotos) {
+      this.$emit('filteredPhotos', newPhotos);
     },
-    computed: {
-      filteredPhotos() {
-        // if (this.filterTab === '') {
-        //   return this.photos;
-        // }
-        return this.photos.filter(photo => photo.type === this.filterTab);
-      },
-    },
-    watch: {
-      filteredPhotos(newPhotos) {
-        this.$emit('filteredPhotos', newPhotos);
-      },
-    },
-    created() {
-      this.$emit('filteredPhotos', this.filteredPhotos);
-    },
-  };
-  </script>
+  },
+  created() {
+    this.$emit('filteredPhotos', this.filteredPhotos);
+  },
+};
+</script>
 
 <style scoped>
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2em;
-  row-gap: 2em;
-  max-width: 90rem;
+    grid-template-columns:
+      repeat(3, 1fr);
+    gap: 4px;
+
 }
 </style>

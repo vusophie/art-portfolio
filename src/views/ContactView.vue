@@ -1,15 +1,27 @@
 <template>
-    <div class="contact">
+    <CContainer fluid class="contact">
       <h1>This is a contact page</h1>
-    </div>
+      <CContainer fluid class="contact">
+      <h1>This is a contact page</h1>
+    </CContainer>
+    <CContainer fluid class="contact">
+      <h1>This is a contact page</h1>
+    </CContainer>
+    </CContainer>
+    <CContainer fluid class="contact">
+      <h1>This is a contact page</h1>
+    </CContainer>
+    <CContainer fluid class="contact">
+      <h1>This is a contact page</h1>
+    </CContainer>
+    <CContainer fluid class="contact">
+      <h1>This is a contact page</h1>
+    </CContainer>
   </template>
   
   <style>
-  @media (min-width: 1024px) {
     .contact {
-      min-height: 100vh;
       display: flex;
       align-items: center;
     }
-  }
   </style>
