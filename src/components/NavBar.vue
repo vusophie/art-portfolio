@@ -1,69 +1,81 @@
-<template>
-  <CContainer 
-    class="navbar"
-    :class="{ 'navbar--hidden': !showNavbar }">
-    <nav>
-      <RouterLink class="sublink" to="/" @click="logClick"> <i>Sophie Illustrations</i></RouterLink>
-      <RouterLink class="sublink" to="/sketchbook" @click="logClick">Sketchbook</RouterLink>
-      <RouterLink class="sublink" to="/digital" @click="logClick">Digital</RouterLink>
-      <RouterLink class="sublink" to="/contact" @click="logClick">Contact</RouterLink>
-    </nav>
-  </CContainer>
+<template>    
+  <nav class="navbar" :class="{ 'navbar--hidden': !showNavbar }">
+    <RouterLink 
+      v-for="(link, index) in links"
+      :key="index"
+      class="sublink"
+      :to="link.route"
+      :class="{ 'active': activeIndex === index }"
+      @click="setActiveLink(index)"
+    >
+      {{ link.text }}
+    </RouterLink>
+    <div class="active-slider" :style="sliderStyle"></div>
+  </nav>
   <keep-alive>
     <RouterView />
   </keep-alive>
 </template>
 
 <script>
-import { RouterView } from 'vue-router';
-
 export default {
   data() {
     return {
       showNavbar: true,
-      lastScrollPosition: 0
+      lastScrollPosition: 0,
+      activeIndex: 0,  // Track active index
+      links: [
+        { text: 'Sophie Illustrations [/]', route: '/' },
+        { text: 'Sketchbook', route: '/sketchbook' },
+        { text: 'Digital', route: '/digital' },
+        { text: 'Contact', route: '/contact' }
+      ]
     };
   },
-  mounted() {
-    console.log("Navbar component mounted.");
-    window.addEventListener('scroll', this.onScroll);
-
-    // Example: you can directly log clicks on navbar
-    this.$router.beforeEach((to, from, next) => {
-      console.log(`Before navigating to: ${to.fullPath}`);
-      next();
-    });
-    this.$router.afterEach((to, from) => {
-      console.log(`After navigating to: ${to.fullPath}`);
-    });
-  },
-  beforeDestroy() {
-    console.log("Navbar component is about to be destroyed.");
-    window.removeEventListener('scroll', this.onScroll);
-  },
   methods: {
-    onScroll() {
-      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-      console.log(`Current scroll position: ${currentScrollPosition}`);
-      
-      if (currentScrollPosition < 0) {
-        console.log("Scroll position is less than zero, returning.");
-        return;
-      }
-
-      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
-        console.log("Scroll difference is less than 60px, skipping navbar update.");
-        return;
-      }
-
-      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
-      console.log(`Navbar visibility: ${this.showNavbar ? 'Visible' : 'Hidden'}`);
-
-      this.lastScrollPosition = currentScrollPosition;
+    setActiveLink(index) {
+      this.activeIndex = index;
     },
-    logClick(event) {
-      console.log(`Link clicked: ${event.target.textContent}`);
-    }
-  }
+  },
 };
 </script>
+
+<style>
+
+.navbar {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 5%;
+  border-radius: 55px;
+  margin: 2% 4%;
+  font-size: 1em;
+  position: fixed; 
+  top: 0; 
+  z-index: 1000; 
+  transition: background-color 0.3s ease; 
+}
+
+.sublink {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #1f2f76; 
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sublink:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.sublink.active {
+  background-color: rgba(255, 255, 255, 0.7); 
+  border-radius: 25px; 
+  padding: 10px 20px;
+}
+
+</style>
