@@ -53,10 +53,11 @@ export default {
 
 <style scoped>
 .gallery-grid {
+  margin-top: 10em;
   display: grid;
     grid-template-columns:
       repeat(3, 1fr);
-    gap: 4px;
+    gap: 3em;
 
 }
 </style>

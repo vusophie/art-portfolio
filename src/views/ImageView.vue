@@ -1,7 +1,7 @@
 <template>
   <CContainer fluid class="image">
     <div class="img-info">
-      <p class="img-title">{{ photo.title }}</p>
+      <h1 class="title-text">{{ photo.title }}</h1>
       <p class="img-info">
         This is a {{ photo.type }} piece made using {{ photo.description.tools }}. {{ photo.description.more }}
       </p>
@@ -33,12 +33,16 @@ export default {
 
 <style>
 .image {
-  margin-top: 60vh;
-  max-height: 190vh;
+  margin-top: 10em;
+  min-height: 100vh;
+  width: 70vw;
+  padding: 6em 0em;
+  border-radius: 3%;
   display: flex;
   flex-direction: column; 
   justify-content: flex-start;
   align-items: center; 
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .img-info {
@@ -49,10 +53,8 @@ export default {
   margin-bottom: 5em;
 }
 
-.img-title {
-  font-family: 'Times New Roman', serif;
-  font-weight: 600;
-  font-size: 1.5em;
+.title-text {
+  letter-spacing: 0em;
   margin-bottom: 3em;
 }
 
@@ -64,7 +66,6 @@ export default {
   display: flex; 
   flex-direction: column; 
   align-items: center;
-  margin-bottom: 15em;
   width: 40vw;
   height: 80vh;
 }

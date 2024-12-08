@@ -1,72 +1,70 @@
 <template>
   <CContainer fluid class="about">
-    <!-- <CContainer fluid sm class="left"> -->
-      <!-- <h3>SOPHIE / Visual artist</h3>
-      <div>
+    <CContainer fluid sm class="left">
+      <div class="title">
+        <img src="../../public/icons/star.svg" class="first-star"/>
+        <div class="title-text">
+          <h1>Hi. I'm Sophie.<br>
+          A Developer. </h1>
+        </div>
+        
+        <img src="../../public/icons/star.svg" class="second-star"/>
+      </div>
+      
+      <div class="intro">
         <p>
-          Hey! I’m Sophie, and I love creating art in my spare time. 
-          I mainly draw characters in a cartoon style. 
+          Welcome to my art portfolio website! <br>
           While I primarily work with traditional art, I’m also exploring digital art and animation.
         </p>
       </div>
-      
-      <hr>
-
-      <div>
-        <h3>Tools</h3>
-        <p>
-          I use colored crayons for my paper drawings.
-          For my digital work, I’m using Procreate.
-        </p>
-      </div>
     </CContainer>
-
-    <CContainer fluid lg class="right">
-      <p class="contact-title"><strong>Sophie Illustrations</strong></p>
-      <p><small><strong>CONTACT</strong></small></p>
-      <p><small><a href="https://www.linkedin.com/in/vu-sophie/" target="_blank">www.linkedin.com/in/vu-sophie/</a></small></p>
-      <p><small><a href="https://www.instagram.com/soupvu" target="_blank">www.instagram.com/soupvu</a></small></p>
-      <p><small><a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a></small></p>
-    </CContainer> -->
   </CContainer>
 </template>
 
 <style>
 .about {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  margin-top: 10em;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-/* .left {
-  flex-basis: 60%;
-}
-
-.left div, hr {
-  margin-bottom: 40px;
-}
-
-.right {
-  flex-basis: 30%;
-  padding: 40px;
-}
-
-.right a {
-  color: black !important;
-  text-decoration: none;
-}
-
-.contact-title {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-}
-
-p {
+.first-star, .second-star {
   margin: 0;
-  line-height: 2;
+  width: 3rem;
+  height: auto;
 }
 
-h3 { 
-  color: rgba(0, 59, 222, 1) !important;
-} */
+.first-star {
+  margin-top: 15em;
+}
+
+.second-star {
+  margin-top: -15em;
+}
+
+.intro {
+  margin-top: 2.5em;
+  line-height: 2.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.title-text h1 {
+  line-height: 1em;
+  font-size: 8rem;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 </style>
