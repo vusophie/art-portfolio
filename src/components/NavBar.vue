@@ -18,12 +18,13 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
       showNavbar: true,
       lastScrollPosition: 0,
-      activeIndex: 0,  // Track active index
+      activeIndex: 0,
       links: [
         { text: 'Sophie Illustrations [/]', route: '/' },
         { text: 'Sketchbook', route: '/sketchbook' },
@@ -34,7 +35,13 @@ export default {
   },
   methods: {
     setActiveLink(index) {
-      this.activeIndex = index;
+      // console.log(index);
+      // if (index == 3) {
+        // this.showContactModal = true;
+      // } else {
+        this.activeIndex = index;
+
+      // }
     },
   },
 };
@@ -73,7 +80,7 @@ export default {
 }
 
 .sublink.active {
-  background-color: rgba(255, 255, 255, 0.7); 
+  background-color: rgba(255, 255, 255, 0.55); 
   border-radius: 25px; 
   padding: 10px 20px;
 }

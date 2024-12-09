@@ -32,6 +32,18 @@ export default {
   justify-content: center;
 }
 
+.title-text {
+  font-family: "Belanosima", sans-serif;
+  font-style: normal;
+  color:  #1f2f76;
+  /* letter-spacing: -0.33em; */
+  line-height: 1em;
+  font-size: 3rem;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 .title {
   margin-top: 10em;
@@ -43,6 +55,6 @@ export default {
 .second-star {
   width: 3rem;
   height: auto;
-  margin-top: -5em;
+  margin-top: -2em;
 }
 </style>
