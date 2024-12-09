@@ -48,12 +48,13 @@ export default {
 
 .image-container {
   position: relative;
-  width: 20vw;
-  height: 45vh;
+  width: 25vw;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-radius: 3%;
 }
 
 .responsive-image {
@@ -63,13 +64,17 @@ export default {
 }
 
 .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 59, 222, 0.8);
+  background-color: #1f2f76;
+  padding: 1em;
+  margin: 0.75em;
   opacity: 0;
+  border-radius: 10%;
   transition: opacity 0.2s ease;
 }
 
@@ -79,6 +84,7 @@ export default {
   justify-content: flex-start;
   align-items: center;
   color: white;
+  font-weight: 600;
 }
 
 .image-container:hover .overlay {
@@ -86,7 +92,6 @@ export default {
 }
 
 .hover-title {
-  margin-top: 3vh;
   font-size: 1em;
 }
 </style>

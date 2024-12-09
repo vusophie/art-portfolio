@@ -6,7 +6,7 @@ import ContactBar from './components/ContactBar.vue'
 <template>
   <div class="container">
     <NavBar />
-    <ContactBar />
+    <!-- <ContactBar /> -->
   </div>
 </template>
 
@@ -31,6 +31,7 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-bottom: 5em;
 }
 
 .NavBar {
@@ -43,10 +44,4 @@ html, body {
   z-index: 1;
 }
 
-.title-text {
-  font-family: "Belanosima", sans-serif;
-  font-style: normal;
-  color:  #1f2f76;
-  letter-spacing: -0.33em;
-}
 </style>
