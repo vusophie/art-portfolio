@@ -37,37 +37,35 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .image {
   margin-top: 10em;
   min-height: 100vh;
-  width: 70vw;
-  padding: 6em 0em;
+  width: 100%;
+  padding: 6em 2em;
   border-radius: 2%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center; 
+  align-items: center;
   background: rgba(255, 255, 255, 0.55);
 }
 
 .img-info {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 1em;
   width: 80%;
   font-weight: 600;
   color: #1f2f76;
-  /* background-color: red; */
 }
 
 .title-text {
   font-family: "Belanosima", sans-serif;
   font-style: normal;
-  color:  #1f2f76;
-  /* letter-spacing: -0.33em; */
+  color: #1f2f76;
   line-height: 1em;
   font-size: 3rem;
   margin: 0;
@@ -77,19 +75,18 @@ export default {
 }
 
 .img-display {
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 40vw;
-  height: 80vh;
-  /* margin-bottom: 5em; */
+  width: 70%;
+  height: auto;
 }
 
 .responsive-image {
-  display: block; 
-  object-fit: cover; 
-  max-height: 90vh;
-  width: auto;
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 80vh;
   border-radius: 2%;
 }
 
@@ -112,5 +109,54 @@ export default {
 
 .close-btn:hover {
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 2.5rem;
+  }
+
+  .img-info {
+    width: 90%;
+  }
+
+  .img-display {
+    width: 90%;
+    height: auto;
+  }
+
+  .responsive-image {
+    max-height: 70vh;
+  }
+
+  .close-btn {
+    top: 7em;
+    right: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-text {
+    font-size: 2rem;
+  }
+
+  .img-info {
+    width: 95%;
+  }
+
+  .img-display {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive-image {
+    max-height: 60vh;
+  }
+
+  .close-btn {
+    top: 6em;
+    right: 1em;
+  }
 }
 </style>

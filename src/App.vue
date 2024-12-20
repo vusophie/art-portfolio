@@ -1,12 +1,10 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
-import ContactBar from './components/ContactBar.vue'
 </script>
 
 <template>
   <div class="container">
     <NavBar />
-    <!-- <ContactBar /> -->
   </div>
 </template>
 

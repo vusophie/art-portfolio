@@ -6,7 +6,7 @@
         <div class="form-group">
           <KInput
             class="form-input"
-            :style="{ width: '290px' }"
+            :style="{ width: '100%' }"
             name="name"
             v-model="user_name"
             placeholder="Name"
@@ -15,7 +15,7 @@
         <div class="form-group">
           <KInput
             class="form-input"
-            :style="{ width: '290px' }"
+            :style="{ width: '100%' }"
             name="email"
             v-model="user_email"
             placeholder="Email Address"
@@ -24,7 +24,7 @@
         <div class="form-group">
           <KTextarea
             class="form-input"
-            :style="{ width: '290px' }"
+            :style="{ width: '100%' }"
             name="message"
             v-model="user_message"
             placeholder="Your Message"
@@ -38,7 +38,7 @@
         </div>
         
         <div class="example-col">
-          <kButton :style="{ width: '100px' }" id="submit-btn">Submit Form</kButton>
+          <kButton :style="{ width: '100%' }" id="submit-btn">Submit Form</kButton>
         </div>
       </form>
     </card>
@@ -112,21 +112,11 @@ export default {
 
 <style scoped>
 .contact-section {
-  margin-top: 10em;
-  height: 100vh;
-  width: auto;
-}
-
-.form-input {
-  margin: 10px 15px;
-  border-radius: 0px;
-  padding: 10px 0px;
-}
-
-#submit-btn {
-  margin: 10px 0px;
-  padding: 10px 20px;
-  background-color: lightcoral;
+  margin-top: 5em;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .card-section {
@@ -134,6 +124,8 @@ export default {
   padding: 2em;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
 }
 
 h1 {
@@ -141,27 +133,75 @@ h1 {
   color: #1f2f76;
   font-size: 2em;
   margin-bottom: 1em;
-}
-
-.example-col {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .form-group {
   margin-bottom: 1em;
 }
 
+.form-input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .k-button {
   background-color: lightcoral;
   color: white;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .k-button:hover {
   background-color: #ff5a5f;
+}
+
+.example-col {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-section {
+    padding: 1.5em;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .k-button {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-section {
+    padding: 1em;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .form-input {
+    padding: 8px;
+  }
+
+  .k-button {
+    padding: 10px 15px;
+  }
 }
 </style>
