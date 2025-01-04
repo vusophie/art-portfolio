@@ -9,18 +9,14 @@ import NavBar from './components/NavBar.vue'
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Hammersmith+One&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Overpass:ital,wght@0,900;1,900&display=swap');
 html, body {
   min-height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../public/images/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center;
-  /* filter: saturate(0.5); */
+  background-color: #f9f7f3;
 }
 
 .container {
@@ -36,10 +32,4 @@ html, body {
   position: relative;
   z-index: 1;
 }
-
-.ContactBar {
-  position: relative;
-  z-index: 1;
-}
-
 </style>

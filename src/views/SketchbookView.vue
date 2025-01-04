@@ -1,11 +1,5 @@
 <template>
   <div class="sketchbook">
-    <div class="title">
-      <div class="title-text">
-        <h1>Sketchbook.</h1>
-      </div>
-      <img src="../../public/icons/star.svg" class="second-star"/>
-    </div>
     <GalleryList initialTab="sketchbook" />
   </div>
 </template>
