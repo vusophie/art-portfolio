@@ -20,7 +20,7 @@
       </button>
 
       <!-- Login/Logout Button -->
-      <button class="sublink auth-btn" @click="showLoginDialog = true">
+      <button class="sublink auth-btn" @click="authLogin">
         {{ loggedIn ? 'Logout' : 'Login' }}
       </button>
     </div>
@@ -156,6 +156,18 @@ export default {
     },
     toggleNavbar() {
       this.showNavbar = !this.showNavbar;
+    },
+    authLogin() {
+      if (this.loggedIn) {
+        // Logout Logic
+        this.loggedIn = false;
+        this.showLoginDialog = false;
+        alert('Logged out successfully!');
+      } else {
+        // Login Logic
+        this.showLoginDialog = true;
+        this.loggedIn = true;
+      }
     },
     onSubmit() {
       if (!this.form) return;
