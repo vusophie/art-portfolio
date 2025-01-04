@@ -20,7 +20,7 @@
       </button>
 
       <!-- Login/Logout Button -->
-      <button class="sublink auth-btn" @click="handleAuth">
+      <button class="sublink auth-btn" @click="showLoginDialog = true">
         {{ loggedIn ? 'Logout' : 'Login' }}
       </button>
     </div>
@@ -63,6 +63,68 @@
     </template>
   </v-dialog>
 
+  <v-dialog
+  v-model="showLoginDialog"
+  persistent
+  max-width="600"
+  transition="dialog-bottom-transition"
+  >
+    <template v-slot:default>
+      <v-card>
+        <v-card-title>
+          <span>Login</span>
+          <v-spacer></v-spacer>
+          <v-btn icon @click="showLoginDialog = false">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+        </v-card-title>
+        <v-card-text>
+          <v-form
+            v-model="form"
+            @submit.prevent="onSubmit"
+          >
+            <v-text-field
+              v-model="email"
+              :readonly="loading"
+              :rules="[required]"
+              class="mb-2"
+              label="Email"
+              clearable
+            ></v-text-field>
+
+            <v-text-field
+              v-model="password"
+              :readonly="loading"
+              :rules="[required]"
+              label="Password"
+              placeholder="Enter your password"
+              clearable
+            ></v-text-field>
+
+            <br>
+
+            <v-btn
+              :disabled="!form"
+              :loading="loading"
+              color="success"
+              size="large"
+              type="submit"
+              variant="elevated"
+              block
+            >
+              Sign In
+            </v-btn>
+          </v-form>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn color="primary" @click="showLoginDialog = false">
+            Close
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </template>
+  </v-dialog>
+
   <keep-alive>
     <RouterView />
   </keep-alive>
@@ -75,7 +137,12 @@ export default {
       showNavbar: true,
       activeIndex: 0,
       showContactDialog: false,
-      loggedIn: false, // Tracks user login state
+      showLoginDialog: false,
+      loggedIn: false, // Track user login state
+      loading: false, // Loading state for login form
+      form: false, // Form validity state
+      email: '', // Email input
+      password: '', // Password input
       links: [
         { text: "Sophie's Art", route: '/' },
         { text: 'Sketchbook', route: '/sketchbook' },
@@ -90,19 +157,23 @@ export default {
     toggleNavbar() {
       this.showNavbar = !this.showNavbar;
     },
-    handleAuth() {
-      if (this.loggedIn) {
-        // Logout Logic
-        this.loggedIn = false;
-        alert('Logged out successfully!');
-      } else {
-        // Login Logic
+    onSubmit() {
+      if (!this.form) return;
+      this.loading = true;
+
+      setTimeout(() => {
+        this.loading = false;
         this.loggedIn = true;
-        alert('Logged in successfully!');
-      }
+        this.showLoginDialog = false;
+        alert('Login Successful!');
+      }, 2000);
+    },
+    required(value) {
+      return !!value || 'Required.';
     },
   },
 };
+
 </script>
 
 <style scoped>
