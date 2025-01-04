@@ -1,38 +1,86 @@
-<template>    
+<template>
   <nav class="navbar" :class="{ 'navbar--hidden': !showNavbar }">
     <div class="navbar-toggle" @click="toggleNavbar">
       <span class="toggle-icon">&#9776;</span>
     </div>
-    <RouterLink 
-      v-for="(link, index) in links"
-      :key="index"
-      class="sublink"
-      :to="link.route"
-      :class="{ 'active': activeIndex === index }"
-      @click="setActiveLink(index)"
-    >
-      {{ link.text }}
-    </RouterLink>
-    <div class="active-slider" :style="sliderStyle"></div>
+    <div class="nav-links">
+      <RouterLink 
+        v-for="(link, index) in links"
+        :key="index"
+        class="sublink"
+        :to="link.route"
+        :class="{ 'active': activeIndex === index }"
+        @click="setActiveLink(index)"
+      >
+        {{ link.text }}
+      </RouterLink>
+
+      <button class="sublink contact-btn" @click="showContactDialog = true">
+        Contact
+      </button>
+
+      <!-- Login/Logout Button -->
+      <button class="sublink auth-btn" @click="handleAuth">
+        {{ loggedIn ? 'Logout' : 'Login' }}
+      </button>
+    </div>
   </nav>
+
+  <!-- Contact Dialog -->
+  <v-dialog
+    v-model="showContactDialog"
+    persistent
+    max-width="600"
+    transition="dialog-bottom-transition"
+  >
+    <template v-slot:default>
+      <v-card>
+        <v-card-title>
+          <span>Contact</span>
+          <v-spacer></v-spacer>
+          <v-btn icon @click="showContactDialog = false">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+        </v-card-title>
+        <v-card-text>
+          <p>Email: <a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a></p>
+          <p>LinkedIn: 
+            <a
+              href="https://www.linkedin.com/vusophie"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.linkedin.com/vusophie
+            </a>
+          </p>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn color="primary" @click="showContactDialog = false">
+            Close
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </template>
+  </v-dialog>
+
   <keep-alive>
     <RouterView />
   </keep-alive>
 </template>
 
 <script>
-
 export default {
   data() {
     return {
       showNavbar: true,
       activeIndex: 0,
+      showContactDialog: false,
+      loggedIn: false, // Tracks user login state
       links: [
-        { text: 'Sophie Illustrations [/]', route: '/' },
+        { text: "Sophie's Art", route: '/' },
         { text: 'Sketchbook', route: '/sketchbook' },
         { text: 'Digital', route: '/digital' },
-        { text: 'Contact', route: '/contact' }
-      ]
+      ],
     };
   },
   methods: {
@@ -41,27 +89,41 @@ export default {
     },
     toggleNavbar() {
       this.showNavbar = !this.showNavbar;
-    }
-  }
+    },
+    handleAuth() {
+      if (this.loggedIn) {
+        // Logout Logic
+        this.loggedIn = false;
+        alert('Logged out successfully!');
+      } else {
+        // Login Logic
+        this.loggedIn = true;
+        alert('Logged in successfully!');
+      }
+    },
+  },
 };
 </script>
 
-<style>
-
+<style scoped>
 .navbar {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  padding: 2% 5%;
-  border-radius: 55px;
-  margin: 2% 4%;
-  font-size: 1em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar--hidden {
+  transform: translateY(-100%);
 }
 
 .navbar-toggle {
@@ -70,63 +132,64 @@ export default {
 }
 
 .toggle-icon {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #1f2f76;
 }
 
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
 .sublink {
-  padding: 10px 15px;
   text-decoration: none;
-  color: #1f2f76; 
-  font-size: 1.1em;
+  font-size: 1rem;
   font-weight: 600;
-  display: inline-block;
+  color: #1f2f76;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sublink:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
 
 .sublink.active {
-  background-color: rgba(255, 255, 255, 0.55);
-  border-radius: 25px;
-  padding: 10px 20px;
+  background-color: #1f2f76;
+  color: #ffffff;
 }
 
-/* Mobile view */
+.auth-btn {
+  background-color: #ff4081;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #e73370;
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
-    margin: 0;
+    padding: 1rem;
   }
 
   .navbar-toggle {
     display: block;
-    margin-bottom: 1rem;
   }
 
-  .sublink {
-    font-size: 1.2em;
-    padding: 10px;
-    text-align: center;
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     width: 100%;
-  }
-
-  .navbar--hidden {
-    display: none;
-  }
-
-  .navbar-toggle + .sublink {
-    display: none;
-  }
-
-  .navbar-show .sublink {
-    display: block;
-    margin: 0.5rem 0;
   }
 }
 </style>

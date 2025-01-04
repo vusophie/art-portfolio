@@ -1,16 +1,41 @@
 <template>
-  <CContainer fluid class="image">
-    <div class="img-info">
-      <button class="close-btn" @click="goBack">✖</button>
-      <h1 class="title-text">{{ photo.title }}</h1>
-      <p class="img-info">
-        This is a {{ photo.type }} piece made using {{ photo.description.tools }}. {{ photo.description.more }}
-      </p>
-    </div>
-    <div class="img-display">
-      <img :src="photo.filename.original" alt="photo.title" class="responsive-image">
-    </div>
-  </CContainer>
+  <v-container fluid class="image-container">
+    <v-row justify="center">
+      <v-col cols="12" sm="10" md="8" class="image-card">
+        <v-btn color="primary" @click="goBack" class="back-btn">
+          <v-icon left>mdi-arrow-left</v-icon>
+          Go Back
+        </v-btn>
+        <v-row justify="center" align="center" class="text-section">
+          <div class="divider">
+            <h1 class="title-text">{{ photo.title }}</h1> <br>
+          <p class="img-info-text">
+            This is a {{ photo.type }} piece made using {{ photo.description.tools }}.
+          </p>
+          </div>
+          
+          <div class="contact-info">
+            <v-chip color="primary" text-color="white" class="contact-chip">
+              <v-icon left>mdi-email</v-icon>
+              sottvu@gmail.com
+            </v-chip>
+            <v-chip color="primary" text-color="white" class="contact-chip">
+              <v-icon left>mdi-linkedin</v-icon>
+              linkedin.com/vusophie
+            </v-chip>
+          </div>
+        </v-row>
+        <v-row justify="center" class="image-section">
+          <v-img
+            :src="photo.filename.original"
+            :alt="photo.title"
+            class="original-image"
+            max-height="100%"
+          ></v-img>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -25,138 +50,108 @@ export default {
   },
   computed: {
     photo() {
-      let img = this.photos.find(photo => photo.id === Number(this.$route.params.id));
-      return img;
+      return this.photos.find(photo => photo.id === Number(this.$route.params.id));
     },
   },
   methods: {
     goBack() {
-      this.$router.go(-1);
+      this.$router.go(-1); // Navigate to the previous page
     }
   }
 };
 </script>
 
 <style scoped>
-.image {
-  margin-top: 10em;
+
+.divider {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  margin-top: 10%;
+  background: #f9f9f9;
   min-height: 100vh;
-  width: 100%;
-  padding: 6em 2em;
-  border-radius: 2%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  background: rgba(255, 255, 255, 0.55);
+  padding: 2em 1em;
 }
 
-.img-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 1em;
-  width: 80%;
-  font-weight: 600;
-  color: #1f2f76;
+.image-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  position: relative;
 }
 
+/* Back button styling */
+.back-btn {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-weight: bold;
+}
+
+/* Title and text styling */
 .title-text {
   font-family: "Belanosima", sans-serif;
-  font-style: normal;
   color: #1f2f76;
-  line-height: 1em;
-  font-size: 3rem;
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0.5em;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-.img-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  height: auto;
+.img-info-text {
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-.responsive-image {
-  display: block;
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 80vh;
-  border-radius: 2%;
-}
-
-.close-btn {
-  background-color: rgba(255, 255, 255, 0.55);
-  color: #1f2f76;
-  border: none;
-  border-radius: 20%;
-  width: 2em;
-  height: 2em;
-  font-size: 1.25em;
-  cursor: pointer;
+/* Contact chips styling */
+.contact-info {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 9.5em;
-  right: 13em;
+  gap: 1em;
+  margin-top: 1em;
 }
 
-.close-btn:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+.contact-chip {
+  font-weight: 500;
+  padding: 0.5em 1em;
+  border-radius: 4px;
 }
 
-/* Media Queries for Mobile Responsiveness */
+/* Image styling */
+.original-image {
+  border-radius: 8px;
+  margin-top: 1em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .title-text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
-  .img-info {
-    width: 90%;
+  .contact-info {
+    flex-wrap: wrap;
   }
 
-  .img-display {
-    width: 90%;
-    height: auto;
-  }
-
-  .responsive-image {
-    max-height: 70vh;
-  }
-
-  .close-btn {
-    top: 7em;
-    right: 2em;
+  .contact-chip {
+    margin: 0.5em 0;
   }
 }
 
 @media (max-width: 480px) {
   .title-text {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
-  .img-info {
-    width: 95%;
-  }
-
-  .img-display {
-    width: 100%;
-    height: auto;
-  }
-
-  .responsive-image {
-    max-height: 60vh;
-  }
-
-  .close-btn {
-    top: 6em;
-    right: 1em;
+  .back-btn {
+    font-size: 0.875rem;
   }
 }
 </style>

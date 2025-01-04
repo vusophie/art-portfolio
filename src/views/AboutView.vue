@@ -1,113 +1,230 @@
 <template>
   <CContainer fluid class="about">
     <div class="title">
-      <img src="../../public/icons/star.svg" class="first-star" />
-      <div class="title-text">
-        <h1>Hi. I'm Sophie.<br />
-        A Developer.</h1>
+      
+      <h1>Hi. I'm Sophie.</h1>
+      <div class="doodle-wrapper">
+          <img src="../../public/photos/id.png" class="doodle" />
       </div>
-      <img src="../../public/icons/star.svg" class="second-star" />
     </div>
 
     <div class="intro">
-      <img src="../../public/photos/id.png" class="id" />
-      <div class="intro-text">
-        <h1>Welcome to my art portfolio website!</h1>
-        <p>
-          Over the years, I've explored many forms of art, from traditional to digital, abstract pieces,
-          and character design. Lately, I'm really enjoying sketching and animation, which allow me to
-          bring my ideas to life in fun ways. This website is a digital portfolio where I can share my
-          passion for art and the journey I've been on. I’m excited to showcase my work and hope you enjoy it!
-        </p>
+      <div class="doodle-wrapper">
+          <img src="../../public/photos/7.png" class="doodle" />
       </div>
+      <div class="intro-wrapper">
+        <h1>This website is my digital portfolio. I’m excited to showcase my work and hope you enjoy it as much as I’ve enjoyed creating it.</h1>
+        <div class="doodle-wrapper">
+            <img src="../../public/photos/1.png" class="doodle" />
+        </div>
+      </div>
+      
+      
+    </div>
+
+    <div class="scroll-line" id="scroll-line">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
+        <path d="M 0 5 Q 25 0, 50 5 Q 75 10, 100 5" stroke="red" stroke-width="2" fill="transparent"/>
+      </svg>
+    </div>
+    
+    <div class="about-content">
+      <div class="doodle-wrapper">
+        <img src="../../public/photos/recent.png" class="doodle" />
+      </div>
+      <h1>Over the years, I've explored many forms of art.</h1>
+      <p>
+        My artistic journey includes character design and abstract work. Lately, I’ve been loving sketching and animation!
+      </p>
+      <button>Recent Artwork</button>
+    </div>
+
+    <div class="scroll-line" id="scroll-line"></div>
+
+    <div class="about-content">
+      <div class="doodle-wrapper">
+          <img src="../../public/photos/computer.png" class="doodle" />
+      </div>
+      <h1>Did I mention I’m a developer too?</h1>
+      <p>
+        When I’m not making art, I’m busy coding. 
+        I love designing and building user interfaces for websites, 
+        and this site is one of my creations! 
+        If you’d like to see what else I’ve been up to, feel free to check out my resume.
+      </p>
+      <v-btn
+        color="deep-purple-darken-2"
+        size="large"
+        elevation="2"
+        @click="dialog = true"
+      >
+        View My Resume
+      </v-btn>
+      <v-dialog v-model="dialog" max-width="800">
+        <v-card>
+          <v-card-title>
+            <span class="text-h6">My Resume</span>
+            <v-spacer></v-spacer>
+            <v-btn icon @click="dialog = false">
+              <v-icon>mdi-close</v-icon>
+            </v-btn>
+          </v-card-title>
+          <v-divider></v-divider>
+          <v-card-text>
+            <iframe
+              :src="pdfPath"
+              width="100%"
+              height="600px"
+              style="border: none;"
+            ></iframe>
+          </v-card-text>
+        </v-card>
+      </v-dialog>
+    </div>
+
+    <div class="scroll-line" id="scroll-line"></div>
+
+    <div class="about-content">
+      <div class="doodle-wrapper">
+        <img src="../../public/photos/2.png" class="doodle" id='doodleConnect'/>
+      </div>
+      <h1>Let's Connect!</h1>
+      <p>
+        I’d love to hear from you! You can email me at <code>@sottvu@gmail.com</code> or LinkedIn at <code>@vusophie</code>.
+        Whether it’s to chat about art, coding, or anything in between, don’t hesitate to reach out!
+      </p>
     </div>
   </CContainer>
 </template>
 
-<style>
+<style scoped>
+
 .about {
   min-height: 100vh;
-  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
-  margin-top: 8em;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+  width: 90%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 15% 5% 0% 10%;
+  text-align: left;
 
-.first-star, .second-star {
-  margin: 0;
-  width: 3rem;
-  height: auto;
-}
+  h1 {
+    font-family: "Overpass", serif;
+    font-size: 5em;
+    margin-right: 20%;
+  }
 
-.first-star {
-  margin-top: 15em;
-}
-
-.second-star {
-  margin-top: -15em;
+  .doodle {
+    width: 10em;
+    height: auto;
+  }
 }
 
 .intro {
-  padding-top: 5em;
-  line-height: 2.5em;
-  font-size: 1.1em;
-  font-weight: 600;
   display: flex;
+  width: 90%;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  flex-wrap: wrap;
-  gap: 2em;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0% 5% 0% 5%;
+
+  h1 {
+    font-family: "Overpass", serif;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+    font-size: 2.7em;
+  }
+
+  .intro-wrapper {
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .doodle-wrapper {
+      margin-right: 30%;
+    }
+
+    .doodle {
+      align-self: flex-end;
+      width: 8em;
+      height: auto;
+    }
+  }
+
+  .doodle-wrapper {
+    margin-left: 5%;
+    z-index: 1;
+  }
+
+  .doodle {
+    width: 8em;
+    height: auto;
+  }
 }
 
-.intro-text {
+
+.about-content {
   display: flex;
   flex-direction: column;
-  width: 65%;
-  text-align: start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2em;
 }
 
-.intro-text h1 {
-  font-family: "Belanosima", sans-serif;
-  font-style: normal;
-  color: #1f2f76;
-  font-size: 3em;
-  line-height: 1.1em;
+.about-content p {
+  max-width: 60%;
+}
+
+.doodle-wrapper {
+  transition: transform 100ms;
+  will-change: transform;
+}
+
+
+.doodle:hover, .doodle:focus {
+  transition: transform 100ms;
+  transform: translateX(-10px);
+
+}
+
+.doodle {
+  width: 25vw;
+  height: auto;
+  object-fit: cover;
   margin-bottom: 1em;
 }
 
-.title-text {
-  font-family: "Belanosima", sans-serif;
-  font-style: normal;
-  color: #1f2f76;
-  line-height: 2em;
-  font-size: 4rem;
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.id {
-  height: 20em;
-  border-radius: 15em 15em 0em 0em;
+#doodleConnect {
+  height: 15em;
   width: auto;
-  max-width: 100%;
 }
 
-/* Media Queries for Mobile Responsiveness */
+
+button {
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
-  .title-text h1 {
+  .title-text {
     font-size: 2.5em;
   }
 
@@ -117,52 +234,52 @@
     width: 100%;
   }
 
-  .intro-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .intro-text h1 {
-    font-size: 2.5em;
-  }
-
-  .id {
-    height: 15em;
-    margin-bottom: 2em;
-  }
-
-  .first-star, .second-star {
-    width: 2rem;
-  }
-
-  .first-star {
-    margin-top: 8em;
-  }
-
-  .second-star {
-    margin-top: -8em;
+  .about-content {
+    padding: 2em;
+    width: 80%;
   }
 }
 
 @media (max-width: 480px) {
-  .title-text h1 {
+  .title-text {
     font-size: 2em;
   }
 
-  .intro-text h1 {
-    font-size: 2em;
+  .intro h1 {
+    font-size: 1.8em;
   }
 
-  .intro {
-    padding-top: 2em;
-  }
-
-  .id {
-    height: 12em;
-  }
-
-  .first-star, .second-star {
-    width: 1.5rem;
+  .about-content {
+    width: 90%;
   }
 }
 </style>
+
+<script>
+  export default {
+    mounted() {
+      const lines = document.querySelectorAll('.scroll-line');
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            } else {
+              entry.target.classList.remove('active');
+            }
+          });
+        },
+        {
+          threshold: 0.5
+        }
+      );
+    },
+    data() {
+      return {
+        dialog: false,
+        pdfPath: '../../public/docs/Resume_Sophie_Vu.pdf', // Adjust path if necessary
+      };
+    },
+  }
+</script>
