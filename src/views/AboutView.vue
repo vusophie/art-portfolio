@@ -36,7 +36,15 @@
       <p>
         My artistic journey includes character design and abstract work. Lately, I’ve been loving sketching and animation!
       </p>
-      <button>Recent Artwork</button>
+      <RouterLink :to="{ name: 'sketchbook' }">
+        <v-btn
+          color="deep-purple-darken-2"
+          size="large"
+          elevation="2"
+        >
+          Recent Artwork
+        </v-btn>
+      </RouterLink>
     </div>
 
     <div class="scroll-line" id="scroll-line"></div>
@@ -140,7 +148,6 @@
 
   h1 {
     font-family: "Overpass", serif;
-
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;

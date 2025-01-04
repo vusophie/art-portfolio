@@ -3,6 +3,7 @@
     <div class="navbar-toggle" @click="toggleNavbar">
       <span class="toggle-icon">&#9776;</span>
     </div>
+    <h1 class="title">SOPHIE VU</h1>
     <div class="nav-links">
       <RouterLink 
         v-for="(link, index) in links"
@@ -144,7 +145,7 @@ export default {
       email: '', // Email input
       password: '', // Password input
       links: [
-        { text: "Sophie's Art", route: '/' },
+        { text: "About", route: '/' },
         { text: 'Sketchbook', route: '/sketchbook' },
         { text: 'Digital', route: '/digital' },
       ],
@@ -166,7 +167,6 @@ export default {
       } else {
         // Login Logic
         this.showLoginDialog = true;
-        this.loggedIn = true;
       }
     },
     onSubmit() {
@@ -189,6 +189,12 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  font-family: "Vibur", serif;
+  font-size: 3em;
+  font-weight: 100;
+}
+
 .navbar {
   width: 100%;
   display: flex;
@@ -232,6 +238,9 @@ export default {
   padding: 0.5rem 1rem;
   border-radius: 25px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Overpass", serif;
+  font-size: 1.1em;
+  font-weight: 100;
 }
 
 .sublink:hover {
