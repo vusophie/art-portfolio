@@ -3,13 +3,9 @@
     <div class="navbar-toggle" @click="toggleNavbar">
       <span class="toggle-icon">&#9776;</span>
     </div>
-<<<<<<< HEAD
     <h1 class="title">
       <RouterLink class="title-link" :to="'/'">SOPHIE VU</RouterLink>
     </h1>
-=======
-    <h1 class="title">SOPHIE VU</h1>
->>>>>>> 562a4d8e3bc3e3d09ba76a45b38b0076d3303c0a
     <div class="nav-links">
       <RouterLink
         v-for="(link, index) in links"
@@ -81,13 +77,8 @@ export default {
       email: '', // Email input
       password: '', // Password input
       links: [
-<<<<<<< HEAD
       { text: "About", route: '/about' },
       { text: 'Sketchbook', route: '/sketchbook' },
-=======
-        { text: "About", route: '/' },
-        { text: 'Sketchbook', route: '/sketchbook' },
->>>>>>> 562a4d8e3bc3e3d09ba76a45b38b0076d3303c0a
         { text: 'Digital', route: '/digital' },
       ],
     };
@@ -132,7 +123,6 @@ export default {
 <style scoped>
 .title {
   font-family: "Vibur", serif;
-<<<<<<< HEAD
   font-size: 2.5em;
   font-weight: 400;
   color: #1f2f76;
@@ -146,10 +136,6 @@ export default {
 
 .title-link:hover {
   color: #2575fc;
-=======
-  font-size: 3em;
-  font-weight: 100;
->>>>>>> 562a4d8e3bc3e3d09ba76a45b38b0076d3303c0a
 }
 
 .navbar {
