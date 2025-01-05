@@ -1,23 +1,30 @@
 <template>
 
+
     <CContainer fluid class="about">
       <div class="title">
         <div class="intro">
           <h1>{{ greeting }} This website is my art portfolio. I’m excited to showcase my art and hope you enjoy it as much as I’ve enjoyed creating it.</h1>
           <div>
-            <v-btn>Learn More About Me</v-btn>
-            <v-btn>See My Recent Artwork</v-btn>
+            <RouterLink :to="'/about'">
+              <v-btn height="48">
+                Learn More About Me
+              </v-btn>
+            </RouterLink>
+              
+
+              <RouterLink :to="'/sketchbook'">
+                <v-btn
+                  class="flex-grow-1"
+                  height="48"
+                  variant="tonal"
+                >
+                  See My Recent Artwork
+                </v-btn>
+              </RouterLink>
+              
           </div>
         </div>
-          <!-- <div class="doodle-wrapper"> -->
-              <!-- <img src="../../public/photos/7.png" class="doodle" /> -->
-          <!-- </div> -->
-          <!-- <div class="intro-wrapper"> -->
-            <!-- <div class="doodle-wrapper">
-                <img src="../../public/photos/1.png" class="doodle" />
-            </div> -->
-          <!-- </div> -->
-  
             <img src="../../public/photos/recent.png" class="doodle" />
       </div>
       
