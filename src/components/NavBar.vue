@@ -3,9 +3,11 @@
     <div class="navbar-toggle" @click="toggleNavbar">
       <span class="toggle-icon">&#9776;</span>
     </div>
-    <h1 class="title">SOPHIE VU</h1>
+    <h1 class="title">
+      <RouterLink class="title-link" :to="'/'">SOPHIE VU</RouterLink>
+    </h1>
     <div class="nav-links">
-      <RouterLink 
+      <RouterLink
         v-for="(link, index) in links"
         :key="index"
         class="sublink"
@@ -16,120 +18,50 @@
         {{ link.text }}
       </RouterLink>
 
-      <button class="sublink contact-btn" @click="showContactDialog = true">
-        Contact
-      </button>
-
-      <!-- Login/Logout Button -->
-      <button class="sublink auth-btn" @click="authLogin">
-        {{ loggedIn ? 'Logout' : 'Login' }}
-      </button>
+      <button class="sublink contact-btn" @click="showContactDialog = true">Contact</button>
+      <button class="sublink auth-btn" @click="authLogin">{{ loggedIn ? 'Logout' : 'Login' }}</button>
     </div>
   </nav>
 
-  <!-- Contact Dialog -->
-  <v-dialog
-    v-model="showContactDialog"
-    persistent
-    max-width="600"
-    transition="dialog-bottom-transition"
-  >
+  <v-dialog v-model="showContactDialog" persistent max-width="600">
     <template v-slot:default>
       <v-card>
-        <v-card-title>
-          <span>Contact</span>
-          <v-spacer></v-spacer>
-          <v-btn icon @click="showContactDialog = false">
+        <v-card-title class="gradient-bg">
+          <span class="text-h5">Let's Connect!</span>
+          <v-btn icon dark @click="showContactDialog = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
         </v-card-title>
         <v-card-text>
-          <p>Email: <a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a></p>
-          <p>LinkedIn: 
-            <a
-              href="https://www.linkedin.com/vusophie"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.linkedin.com/vusophie
-            </a>
-          </p>
+          <p>I’d love to hear from you! Email me at <a href="mailto:sottvu@gmail.com" class="link">sottvu@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/vusophie" target="_blank" class="link">LinkedIn</a>.</p>
+          <p>Let’s chat about coding, design, or any creative ideas!</p>
         </v-card-text>
-        <v-card-actions>
-          <v-btn color="primary" @click="showContactDialog = false">
-            Close
-          </v-btn>
-        </v-card-actions>
+        <v-img src="../../public/photos/2.png" max-height="200px" />
       </v-card>
     </template>
   </v-dialog>
 
-  <v-dialog
-  v-model="showLoginDialog"
-  persistent
-  max-width="600"
-  transition="dialog-bottom-transition"
-  >
+  <v-dialog v-model="showLoginDialog" persistent max-width="600">
     <template v-slot:default>
       <v-card>
-        <v-card-title>
-          <span>Login</span>
-          <v-spacer></v-spacer>
-          <v-btn icon @click="showLoginDialog = false">
+        <v-card-title>Login</v-card-title>
+        <v-btn icon dark @click="showLoginDialog = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
-        </v-card-title>
         <v-card-text>
-          <v-form
-            v-model="form"
-            @submit.prevent="onSubmit"
-          >
-            <v-text-field
-              v-model="email"
-              :readonly="loading"
-              :rules="[required]"
-              class="mb-2"
-              label="Email"
-              clearable
-            ></v-text-field>
-
-            <v-text-field
-              v-model="password"
-              :readonly="loading"
-              :rules="[required]"
-              label="Password"
-              placeholder="Enter your password"
-              clearable
-            ></v-text-field>
-
-            <br>
-
-            <v-btn
-              :disabled="!form"
-              :loading="loading"
-              color="success"
-              size="large"
-              type="submit"
-              variant="elevated"
-              block
-            >
-              Sign In
-            </v-btn>
+          <v-form v-model="form" @submit.prevent="onSubmit">
+            <v-text-field v-model="email" :readonly="loading" :rules="[required]" label="Email" clearable class="mb-2"></v-text-field>
+            <v-text-field v-model="password" :readonly="loading" :rules="[required]" label="Password" placeholder="Enter your password" clearable></v-text-field>
+            <v-btn :disabled="!form" :loading="loading" color="primary" size="large" type="submit" block>Sign In</v-btn>
           </v-form>
         </v-card-text>
-        <v-card-actions>
-          <v-btn color="primary" @click="showLoginDialog = false">
-            Close
-          </v-btn>
-        </v-card-actions>
       </v-card>
     </template>
   </v-dialog>
 
-  <keep-alive>
-    <RouterView />
-  </keep-alive>
+  <keep-alive><RouterView /></keep-alive>
 </template>
+
 
 <script>
 export default {
@@ -145,8 +77,8 @@ export default {
       email: '', // Email input
       password: '', // Password input
       links: [
-        { text: "About", route: '/' },
-        { text: 'Sketchbook', route: '/sketchbook' },
+      { text: "About", route: '/about' },
+      { text: 'Sketchbook', route: '/sketchbook' },
         { text: 'Digital', route: '/digital' },
       ],
     };
@@ -191,23 +123,33 @@ export default {
 <style scoped>
 .title {
   font-family: "Vibur", serif;
-  font-size: 3em;
-  font-weight: 100;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #1f2f76;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.title-link:hover {
+  color: #2575fc;
 }
 
 .navbar {
   width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -227,46 +169,59 @@ export default {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .sublink {
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
   color: #1f2f76;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 25px;
+  font-size: 1.1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "Overpass", serif;
-  font-size: 1.1em;
-  font-weight: 100;
 }
 
 .sublink:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(31, 47, 118, 0.1);
 }
 
 .sublink.active {
   background-color: #1f2f76;
-  color: #ffffff;
+  color: white;
 }
 
-.auth-btn {
-  background-color: #ff4081;
-  color: #ffffff;
-  border: none;
-  padding: 0.5rem 1rem;
+.auth-btn, .contact-btn {
+  background-color: #2575fc;
+  color: white;
+  padding: 0.6rem 1rem;
   border-radius: 25px;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.auth-btn:hover {
-  background-color: #e73370;
+.auth-btn:hover, .contact-btn:hover {
+  background-color: #1f2f76;
 }
 
-/* Mobile View */
+.gradient-bg {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.link {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #6a11cb;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -280,8 +235,8 @@ export default {
   .nav-links {
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    width: 100%;
+    gap: 1rem;
   }
 }
 </style>
+
