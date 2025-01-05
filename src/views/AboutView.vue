@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="12" md="8">
         <v-card class="pa-6">
-          <img src="../../public/photos/hello.png" class="animation" />
+          <img src="../../public/photos/hello.gif" class="animation" />
 
           <v-card-text>
             <p>
