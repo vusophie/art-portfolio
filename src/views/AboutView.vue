@@ -28,7 +28,7 @@
               View My Resume
             </v-btn>
           </v-card-actions>
-          <img src="../../public/photos/computer.png" class="doodle" />
+          <img src="../../public/photos/pc.png" class="doodle" />
 
         </v-card>
       </v-col>
