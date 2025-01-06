@@ -25,7 +25,7 @@
               
           </div>
         </div>
-            <img src="../../public/photos/landing.png" class="doodle" />
+            <img src="../../public/photos/landing.jpg" class="doodle" />
       </div>
       
   
