@@ -76,7 +76,7 @@ export default {
 <style scoped>
 /* Center the entire row */
 .gallery-row {
-  margin-top: 5%;
+  margin: 5% 0;
   justify-content: center;
 }
 
@@ -97,8 +97,8 @@ export default {
 
 /* Image styling */
 .image {
-  height: 25em;
-  width: 25em;
+  height: 45vh;
+  width: 45vh;
   object-fit: cover;
   margin: 10px auto;
 }

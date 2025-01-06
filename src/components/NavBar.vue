@@ -68,7 +68,7 @@ export default {
   data() {
     return {
       showNavbar: true,
-      activeIndex: 0,
+      activeIndex: null, // Default to no active index
       showContactDialog: false,
       showLoginDialog: false,
       loggedIn: false, // Track user login state
@@ -77,8 +77,8 @@ export default {
       email: '', // Email input
       password: '', // Password input
       links: [
-      { text: "About", route: '/about' },
-      { text: 'Sketchbook', route: '/sketchbook' },
+        { text: "About", route: '/about' },
+        { text: 'Sketchbook', route: '/sketchbook' },
         { text: 'Digital', route: '/digital' },
       ],
     };
@@ -92,12 +92,10 @@ export default {
     },
     authLogin() {
       if (this.loggedIn) {
-        // Logout Logic
         this.loggedIn = false;
         this.showLoginDialog = false;
         alert('Logged out successfully!');
       } else {
-        // Login Logic
         this.showLoginDialog = true;
       }
     },
@@ -115,6 +113,17 @@ export default {
     required(value) {
       return !!value || 'Required.';
     },
+  },
+  watch: {
+    $route(to) {
+      const activeIndex = this.links.findIndex(link => link.route === to.path);
+      this.activeIndex = activeIndex !== -1 ? activeIndex : null;
+    },
+  },
+  mounted() {
+    // Set initial active link on page load
+    const activeIndex = this.links.findIndex(link => link.route === this.$route.path);
+    this.activeIndex = activeIndex !== -1 ? activeIndex : null;
   },
 };
 
@@ -144,12 +153,11 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f4f4f4;
+  background-color: #f9f7f3;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
