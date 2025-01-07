@@ -57,6 +57,13 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: 'Basteleur';
+  src: url('../../public/Basteleur-Bold.otf') format('opentype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
 .about {
   min-height: 100vh;
   display: flex;
