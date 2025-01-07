@@ -143,17 +143,18 @@ export default {
 }
 
 hr.dotted {
-  width: 85%;
+  width: 100%;
   margin: 3% 0;
   border-top: 3px dotted #f35f71;
 }
 
 .title {
   font-family: 'Basteleur', sans-serif;
-  font-size: 6vh;
+  font-size: 8vh;
   font-weight: 400;
   color: #5790f4;
   text-align: center;
+  padding-top: 5%;
 }
 
 .title-link {

@@ -70,7 +70,7 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 .about-container {

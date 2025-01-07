@@ -24,8 +24,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2em 1em;
-  margin-top: 12.5%;
+  margin-top: 25%;
 }
 
 /* Media Queries for Mobile Responsiveness */

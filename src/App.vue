@@ -42,7 +42,6 @@ html {
   align-content: center;
   width: 100vw;
   height: 100%;
-  background-color: #f35f71;
 }
 
 /* Main container styling */
@@ -51,7 +50,7 @@ html {
   flex-direction: column;
   align-items: flex-end; /* Horizontally center items */
   justify-items: center;
-  width: 85vw; /* Width of the container */
+  width: 90vw; /* Width of the container */
   height: auto; /* Full height of the parent */
   box-sizing: border-box; /* Include padding and border in dimensions */
   background-color: #f9f7f3;
