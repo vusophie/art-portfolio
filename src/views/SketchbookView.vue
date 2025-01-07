@@ -1,5 +1,25 @@
 <template>
   <div class="sketchbook">
+    <v-dialog v-model="isModalVisible" persistent max-width="600">
+      <v-card>
+        <v-card-title>
+          Welcome!
+          <v-spacer></v-spacer>
+          <v-btn icon @click="closeModal">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+        </v-card-title>
+        <v-card-text>
+          <h1>Welcome to my Sketchbook</h1>
+          <p>
+            Explore my recent artwork and creative journey. I’m excited to
+            share this with you!
+          </p>
+          <v-btn @click="closeModal" color="primary">Get Started</v-btn>
+        </v-card-text>
+      </v-card>
+    </v-dialog>
+
     <GalleryList initialTab="sketchbook" />
   </div>
 </template>
@@ -11,6 +31,23 @@ export default {
   name: 'Sketchbook',
   components: {
     GalleryList,
+  },
+  data() {
+    return {
+      isModalVisible: false, // Default to hidden
+    };
+  },
+  mounted() {
+    // Check if the modal has been shown before
+    if (!localStorage.getItem('hasSeenModal')) {
+      this.isModalVisible = true;
+      localStorage.setItem('hasSeenModal', 'true'); // Mark as shown
+    }
+  },
+  methods: {
+    closeModal() {
+      this.isModalVisible = false;
+    },
   },
 };
 </script>
@@ -24,32 +61,8 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 2em 1em;
+  margin-top: 12.5%;
 }
-
-.title {
-  margin-top: 10em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.title-text {
-  font-family: "Belanosima", sans-serif;
-  font-style: normal;
-  color: #1f2f76;
-  line-height: 1em;
-  font-size: 3rem;
-  margin: 0;
-}
-
-.second-star {
-  width: 3rem;
-  height: auto;
-  margin-top: -2em;
-}
-
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .title-text {

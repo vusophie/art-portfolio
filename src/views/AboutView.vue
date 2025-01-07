@@ -10,8 +10,6 @@
               I’m Sophie! I like creating art and am currently based in Toronto, ON. I do a lot of character design, sketching, and abstract art. Lately, I’ve been loving digital art and animation!
               <br /><br />
               When I’m not making art, I’m busy coding. I love designing and building user interfaces for websites, and this site is one of my creations!
-              <br /><br />
-              If you’d like to see what else I’ve been up to, feel free to check out my resume.
               <br />
               You can contact me directly at:
               <a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a>
@@ -52,7 +50,7 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 p {

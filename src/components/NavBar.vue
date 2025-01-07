@@ -4,7 +4,9 @@
       <span class="toggle-icon">&#9776;</span>
     </div>
     <h1 class="title">
-      <RouterLink class="title-link" :to="'/'">SOPHIE VU</RouterLink>
+      <RouterLink class="title-link" :to="'/'">
+        SOPHIE'S <br> ART
+      </RouterLink>
     </h1>
     <div class="nav-links">
       <RouterLink
@@ -18,9 +20,12 @@
         {{ link.text }}
       </RouterLink>
 
-      <button class="sublink contact-btn" @click="showContactDialog = true">Contact</button>
-      <button class="sublink auth-btn" @click="authLogin">{{ loggedIn ? 'Logout' : 'Login' }}</button>
+      <div class="sublink contact-btn" @click="showContactDialog = true">contact</div>
+      <div class="sublink auth-btn" @click="authLogin">{{ loggedIn ? 'logout' : 'login' }}</div>
     </div>
+
+    <hr class="dotted">
+
   </nav>
 
   <v-dialog v-model="showContactDialog" persistent max-width="600">
@@ -77,9 +82,9 @@ export default {
       email: '', // Email input
       password: '', // Password input
       links: [
-        { text: "About", route: '/about' },
-        { text: 'Sketchbook', route: '/sketchbook' },
-        { text: 'Digital', route: '/digital' },
+        { text: "about", route: '/about' },
+        { text: 'sketchbook', route: '/sketchbook' },
+        { text: 'digital', route: '/digital' },
       ],
     };
   },
@@ -130,11 +135,26 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: 'Basteleur';
+  src: url('../../public/Basteleur-Bold.otf') format('opentype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+hr.dotted {
+  width: 80%;
+  margin: 3% 0;
+  border-top: 3px dotted #f35f71;
+}
+
 .title {
-  font-family: "Vibur", serif;
-  font-size: 2.5em;
+  font-family: 'Basteleur', sans-serif;
+  font-size: 6vh;
   font-weight: 400;
-  color: #1f2f76;
+  color: #5790f4;
+  text-align: center;
 }
 
 .title-link {
@@ -144,19 +164,20 @@ export default {
 }
 
 .title-link:hover {
-  color: #2575fc;
+  color: #f35f71;
 }
 
 .navbar {
-  width: 100%;
+  width: inherit;
   display: flex;
+  flex-direction: column;
+  align-self: center;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #f9f7f3;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 1000;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -178,41 +199,38 @@ export default {
 .nav-links {
   display: flex;
   gap: 1.5rem;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .sublink {
   text-decoration: none;
-  color: #1f2f76;
-  padding: 0.6rem 1rem;
-  border-radius: 25px;
+  color: #5790f4; /* Default link color */
   font-size: 1.1rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "Overpass", serif;
-  font-size: 1.1em;
-  font-weight: 100;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  transition: color 0.3s ease; /* Smooth color change */
 }
 
 .sublink:hover {
-  background-color: rgba(31, 47, 118, 0.1);
+  color: #f35f71; /* Hover color */
+  background-color: transparent; /* No bubble effect */
 }
 
 .sublink.active {
-  background-color: #1f2f76;
-  color: white;
+  color: #f35f71; /* Active link color */
 }
 
-.auth-btn, .contact-btn {
-  background-color: #2575fc;
-  color: white;
-  padding: 0.6rem 1rem;
-  border-radius: 25px;
+.auth-btn,
+.contact-btn {
+  color: #5790f4;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.auth-btn:hover, .contact-btn:hover {
-  background-color: #1f2f76;
+.auth-btn:hover,
+.contact-btn:hover {
+  color: #2575fc; /* Hover color for buttons */
 }
 
 .gradient-bg {

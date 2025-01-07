@@ -25,6 +25,7 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 2em 1em;
+  margin-top: 12.5%;
 }
 
 /* Media Queries for Mobile Responsiveness */

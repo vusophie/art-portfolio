@@ -27,11 +27,6 @@
         </div>
             <img src="../../public/photos/landing.jpg" class="doodle" />
       </div>
-      
-  
-      
-  
-      
     </CContainer>
   </template>
   
@@ -197,6 +192,7 @@
   </style>
   
   <script>
+  
     export default {
       computed: {
         greeting() {
