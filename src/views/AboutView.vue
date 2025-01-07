@@ -23,16 +23,16 @@
           <hr class="dotted">
 
           <div class="tools-container">
-            <div>
+            <div class="column">
               <img src="../../public/photos/landing.jpg" class="doodle" />
 
             </div>
 
-            <div>
+            <div class="column">
               <h1>TRADITIONAL TOOLS</h1>
               <p class="item">• Mont Marte Colour Pencils Premium</p>
               <p class="item">• Sketchbook Paper 8 1/2'' x 11'' (22cm x 28.5cm)</p> <br>
-              <hr class="dotted"> <br>
+              <hr class="dotted" style="width:100%"> <br>
               <h1>DIGITAL TOOLS</h1>
               <p class="item">• Procreate Software</p>
               <p class="item">• Procreate Gesinki Ink Brush</p>
@@ -79,16 +79,16 @@ export default {
 
 .tools-container {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-items: center;
-  margin: 5% 0;
-  padding: 0 8%;
+  margin: 5% 0%;
   text-align: left;
   width: 100%;
 
   img {
     width: 25vw;
-    margin-right: 5em;
+    margin-right: 10em;
   }
 
   h1 {
@@ -100,6 +100,10 @@ export default {
   .item {
     font-size: 1.2rem;
     color: black;
+  }
+
+  .column {
+    width: 50%;
   }
 }
 
