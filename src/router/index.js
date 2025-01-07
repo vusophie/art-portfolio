@@ -12,18 +12,13 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'landing',
-      component: () => import('../views/LandingView.vue')
+      name: 'sketchbook',
+      component: () => import('../views/SketchbookView.vue')
     },
     {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/sketchbook',
-      name: 'sketchbook',
-      component: () => import('../views/SketchbookView.vue')
     },
     {
       path: '/digital',

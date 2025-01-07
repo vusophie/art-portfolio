@@ -83,7 +83,7 @@ export default {
       password: '', // Password input
       links: [
         { text: "about", route: '/about' },
-        { text: 'sketchbook', route: '/sketchbook' },
+        { text: 'sketchbook', route: '/' },
         { text: 'digital', route: '/digital' },
       ],
     };
@@ -136,15 +136,8 @@ export default {
 
 <style scoped>
 
-@font-face {
-  font-family: 'Basteleur';
-  src: url('../../public/Basteleur-Bold.otf') format('opentype');
-  font-weight: normal; 
-  font-style: normal; 
-}
-
 hr.dotted {
-  width: 80%;
+  width: 85%;
   margin: 3% 0;
   border-top: 3px dotted #f35f71;
 }
@@ -199,7 +192,6 @@ hr.dotted {
 .nav-links {
   display: flex;
   gap: 1.5rem;
-  font-family: 'Source Code Pro', monospace;
 }
 
 .sublink {

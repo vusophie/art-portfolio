@@ -684,18 +684,6 @@
         }
       },
       {
-        "id": 57,
-        "title": "Working At A Coffeeshop",
-        "type": "digital",
-        "filename": {
-          "original": "/images/coffee_shop_work.png"
-        },
-        "description": {
-          "tools": "Procreate",
-          "more": "I was testing out different fuchsia shades."
-        }
-      },
-      {
         "id": 58,
         "title": "Facemasks",
         "type": "digital",
@@ -717,30 +705,6 @@
         "description": {
           "tools": "Procreate",
           "more": "I drew this during a trip to Montreal with friends."
-        }
-      },
-      {
-        "id": 60,
-        "title": "Karaoke With Friends",
-        "type": "digital",
-        "filename": {
-          "original": "/images/karaoke.png"
-        },
-        "description": {
-          "tools": "Procreate",
-          "more": "I had issues drawing the couch."
-        }
-      },
-      {
-        "id": 61,
-        "title": "Moving Day",
-        "type": "digital",
-        "filename": {
-          "original": "/images/moving.png"
-        },
-        "description": {
-          "tools": "Procreate",
-          "more": "I drew this a bit too quickly haha."
         }
       }
       

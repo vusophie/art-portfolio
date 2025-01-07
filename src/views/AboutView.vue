@@ -1,35 +1,48 @@
 <template>
   <v-container fluid class="about">
     <v-row justify="center">
-      <v-col cols="12" md="8">
-        <v-card class="pa-6">
+      <v-col cols="12" md="10">
           <img src="../../public/photos/hello.gif" class="animation" />
-
-          <v-card-text>
+          <div class="about-container">
             <p>
-              I’m Sophie! I like creating art and am currently based in Toronto, ON. I do a lot of character design, sketching, and abstract art. Lately, I’ve been loving digital art and animation!
-              <br /><br />
-              When I’m not making art, I’m busy coding. I love designing and building user interfaces for websites, and this site is one of my creations!
+              <b>I'm Sophie!</b> 
+              I like creating art and am currently based in Toronto, ON. 
+              I do a lot of character design, sketching, and abstract art. 
+              Lately, I’ve been loving digital art and animation! 
               <br />
-              You can contact me directly at:
-              <a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a>
             </p>
-          </v-card-text>
-          <v-card-actions class="justify-center">
-            <v-btn
-              color="primary"
-              dark
-              target="_blank"
-              rel="noopener noreferrer"
-              elevation="2"
-            >
-              View My Resume
-            </v-btn>
-          </v-card-actions>
-          <img src="../../public/photos/pc.jpg" class="doodle" />
+            <p>
+              When I’m not making art, I’m busy coding. I love designing and building user interfaces for websites, and this site is one of my creations! 
+            </p>
+            <p>          
+              You can contact me directly at: <br>
+            <b><a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a></b>
+          </p>
+          </div>
 
-        </v-card>
+          <hr class="dotted">
+
+          <div class="tools-container">
+            <div>
+              <img src="../../public/photos/landing.jpg" class="doodle" />
+
+            </div>
+
+            <div>
+              <h1>TRADITIONAL TOOLS</h1>
+              <p class="item">• Mont Marte Colour Pencils Premium</p>
+              <p class="item">• Sketchbook Paper 8 1/2'' x 11'' (22cm x 28.5cm)</p> <br>
+              <hr class="dotted"> <br>
+              <h1>DIGITAL TOOLS</h1>
+              <p class="item">• Procreate Software</p>
+              <p class="item">• Procreate Gesinki Ink Brush</p>
+              <p class="item">• Procreate Eaglehawk Brush</p>
+              <p class="item">• Procreate Soft Brush</p>
+            </div>
+          </div>
+
       </v-col>
+      
     </v-row>
   </v-container>
 </template>
@@ -53,23 +66,65 @@ export default {
   margin-top: 20%;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 5% 0;
+  padding: 0 8%;
+  text-align: center;
+  width: 100%;
+}
+
+.tools-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 5% 0;
+  padding: 0 8%;
+  text-align: left;
+  width: 100%;
+
+  img {
+    width: 25vw;
+    margin-right: 5em;
+  }
+
+  h1 {
+    font-family: 'Basteleur', sans-serif;
+    font-size: 1.5rem;
+    color: #5790f4;
+  }
+
+  .item {
+    font-size: 1.2rem;
+    color: black;
+  }
+}
+
 p {
   font-size: 1.2rem;
   line-height: 1.8;
-  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  margin: 1% 0;
 }
 
 a {
-  color: #1976d2;
+  color: black;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .animation {
 
   width: 25vw;
 }
+
+
+hr.dotted {
+  width: 100%;
+  margin: 3% 0;
+  border-top: 3px dotted #f35f71;
+}
+
 </style>

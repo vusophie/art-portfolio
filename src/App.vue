@@ -25,6 +25,14 @@ html {
   scrollbar-width: none;
 }
 
+
+@font-face {
+  font-family: 'Basteleur';
+  src: url('../../public/Basteleur-Bold.otf') format('opentype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
 /* Background container */
 .background {
   display: flex;
