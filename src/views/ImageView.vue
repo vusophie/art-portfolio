@@ -69,12 +69,13 @@ export default {
 }
 
 .image-container {
-  margin-top: 10%;
+  margin-top: 20%;
   background: #f9f9f9;
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 2em 1em;
+
 }
 
 .image-card {

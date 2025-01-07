@@ -39,10 +39,10 @@ export default {
   },
   mounted() {
     // Check if the modal has been shown before
-    if (!localStorage.getItem('hasSeenModal')) {
-      this.isModalVisible = true;
-      localStorage.setItem('hasSeenModal', 'true'); // Mark as shown
-    }
+    // if (!localStorage.getItem('hasSeenModal')) {
+    //   this.isModalVisible = true;
+    //   localStorage.setItem('hasSeenModal', 'true'); // Mark as shown
+    // }
   },
   methods: {
     closeModal() {
