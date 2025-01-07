@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="about">
     <v-row justify="center">
-      <v-col cols="12" md="10">
+      <v-col>
           <img src="../../public/photos/hello.gif" class="animation" />
           <div class="about-container">
             <p>
@@ -18,7 +18,7 @@
               You can contact me directly at: <br>
             <b><a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a></b>
           </p>
-          </div>
+        </div>
 
           <hr class="dotted">
 
@@ -66,6 +66,7 @@ export default {
 
 .about {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +80,7 @@ export default {
   align-items: center;
   justify-items: center;
   margin: 5% 0;
-  padding: 0 8%;
+  padding: 0 25%;
   text-align: center;
   width: 100%;
 }

@@ -124,7 +124,8 @@ export default {
       const dotted = document.querySelector('.dotted');
       if (window.scrollY > 80) {
         title.style.fontSize = '25px';
-        navbar.style.height = '15%';
+        navbar.style.height = '20%';
+        navbar.style.marginBottom = '5%';
         title.style.paddingTop = '0.5%';
         navbar.style.zIndex = 1000;
         dotted.style.visibility = 'hidden';
@@ -168,7 +169,7 @@ export default {
 }
 
 hr.dotted {
-  width: 100%;
+  width: 90%;
   margin: 3% 0;
   border-top: 3px dotted #f35f71;
 }
