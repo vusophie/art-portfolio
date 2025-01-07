@@ -58,7 +58,7 @@ export default {
 
 <style scoped>
 .gallery-container {
-  width: 98%;
+  width: 100%;
 }
 
 .gallery-row {
@@ -68,8 +68,8 @@ export default {
 }
 
 .photo-col {
-  flex: 0 0 32%; /* Adjust width to have 3 images per row */
-  margin-bottom: 5vh;
+  flex: 0 0 24%; /* Adjust width to have 3 images per row */
+  margin: 0.4%;
   position: relative;
 }
 

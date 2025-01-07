@@ -73,14 +73,14 @@ export default {
   data() {
     return {
       showNavbar: true,
-      activeIndex: null, // Default to no active index
+      activeIndex: null, 
       showContactDialog: false,
       showLoginDialog: false,
-      loggedIn: false, // Track user login state
-      loading: false, // Loading state for login form
-      form: false, // Form validity state
-      email: '', // Email input
-      password: '', // Password input
+      loggedIn: false,
+      loading: false,
+      form: false,
+      email: '',
+      password: '',
       links: [
         { text: "about", route: '/about' },
         { text: 'sketchbook', route: '/' },
@@ -118,6 +118,23 @@ export default {
     required(value) {
       return !!value || 'Required.';
     },
+    scrollFunction() {
+      const navbar = document.querySelector('.navbar');
+      const title = document.querySelector('.title');
+      const dotted = document.querySelector('.dotted');
+      if (window.scrollY > 80) {
+        title.style.fontSize = '25px';
+        navbar.style.height = '15%';
+        title.style.paddingTop = '0.5%';
+        navbar.style.zIndex = 1000;
+        dotted.style.visibility = 'hidden';
+      } else {
+        title.style.fontSize = '8vh';
+        navbar.style.backgroundColor = '#f9f7f3';  // Ensure background is set on scroll up
+        dotted.style.visibility = 'visible';
+        title.style.paddingTop = '5%';
+      }
+    },
   },
   watch: {
     $route(to) {
@@ -126,11 +143,18 @@ export default {
     },
   },
   mounted() {
-    // Set initial active link on page load
     const activeIndex = this.links.findIndex(link => link.route === this.$route.path);
     this.activeIndex = activeIndex !== -1 ? activeIndex : null;
+
+    // Add scroll event listener
+    window.addEventListener('scroll', this.scrollFunction);
+  },
+  beforeDestroy() {
+    // Remove scroll event listener
+    window.removeEventListener('scroll', this.scrollFunction);
   },
 };
+
 
 </script>
 
@@ -140,6 +164,7 @@ export default {
   src: url('../../public/Basteleur-Bold.otf') format('opentype');
   font-weight: normal; 
   font-style: normal; 
+  /* visibility: hidden; */
 }
 
 hr.dotted {
@@ -154,6 +179,7 @@ hr.dotted {
   font-weight: 400;
   color: #5790f4;
   text-align: center;
+  transition: font-size 0.3s ease;
   padding-top: 5%;
 }
 
@@ -168,18 +194,17 @@ hr.dotted {
 }
 
 .navbar {
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #f9f7f3;
+  background-color: #f9f7f3; /* Default background */
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: padding 0.3s ease, background-color 0.3s ease; /* Ensure smooth transitions */
 }
 
 .navbar--hidden {
