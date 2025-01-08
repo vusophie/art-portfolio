@@ -623,42 +623,6 @@
           "tools": "Capcut and Flipbook",
           "more": "This is an attempt at stopmotion."
         }
-      },
-      {
-        "id": 56,
-        "title": "Biking",
-        "type": "digital",
-        "filename": {
-          "original": "/images/biking_with_ex.png"
-        },
-        "description": {
-          "tools": "Procreate",
-          "more": "This is my second drawing on an iPad."
-        }
-      },
-      {
-        "id": 58,
-        "title": "Facemasks",
-        "type": "digital",
-        "filename": {
-          "original": "/images/facemasks_with_ex.png"
-        },
-        "description": {
-          "tools": "Procreate",
-          "more": "This is my first drawing on an iPad."
-        }
-      },
-      {
-        "id": 59,
-        "title": "Ghost Design",
-        "type": "digital",
-        "filename": {
-          "original": "/images/ghost_design.png"
-        },
-        "description": {
-          "tools": "Procreate",
-          "more": "I drew this during a trip to Montreal with friends."
-        }
       }
       
 ]
