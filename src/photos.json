@@ -24,18 +24,6 @@
         }
       },
       {
-        "id": 2,
-        "title": "Avocado",
-        "type": "sketchbook",
-        "filename": {
-          "original": "/images/avocado.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "I wanted to draw parallels between a splitting headache and splitting open an avocado."
-        }
-      },
-      {
         "id": 3,
         "title": "Bath",
         "type": "sketchbook",
@@ -48,18 +36,6 @@
         }
       },
       {
-        "id": 4,
-        "title": "Bassist",
-        "type": "sketchbook",
-        "filename": {
-          "original": "/images/bassist.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "This is a quick sketch of my friend testing out a rental bass."
-        }
-      },
-      {
         "id": 5,
         "title": "Big Eye",
         "type": "sketchbook",
@@ -69,18 +45,6 @@
         "description": {
           "tools": "crayons and sketch paper",
           "more": "I was testing out blending with crayons."
-        }
-      },
-      {
-        "id": 6,
-        "title": "Birth",
-        "type": "sketchbook",
-        "filename": {
-          "original": "/images/birth.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "POV: you are being birthed."
         }
       },
       {
@@ -179,18 +143,7 @@
           "more": "I was testing out color crayons."
         }
       },
-      {
-        "id": 15,
-        "title": "Color Study 2",
-        "type": "sketchbook",
-        "filename": {
-          "original": "/images/color_study2.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "This is bad."
-        }
-      },
+      
       {
         "id": 16,
         "title": "Sketch of my old coworker",
