@@ -21,11 +21,6 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/digital',
-      name: 'digital',
-      component: () => import('../views/DigitalView.vue')
-    },
-    {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')
