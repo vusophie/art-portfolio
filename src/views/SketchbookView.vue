@@ -1,26 +1,12 @@
 <template>
   <div class="sketchbook">
-    <v-dialog v-model="isModalVisible" persistent max-width="600">
-      <v-card>
-        <v-card-title>
-          Welcome!
-          <v-spacer></v-spacer>
-          <v-btn icon @click="closeModal">
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
-        </v-card-title>
-        <v-card-text>
-          <h1>Welcome to my Sketchbook</h1>
-          <p>
-            Explore my recent artwork and creative journey. I’m excited to
-            share this with you!
-          </p>
-          <v-btn @click="closeModal" color="primary">Get Started</v-btn>
-        </v-card-text>
-      </v-card>
-    </v-dialog>
-
-    <GalleryList initialTab="sketchbook" />
+    <div class="button-group">
+      <v-btn variant="tonal" @click="setActiveTab('dreams')">DREAMS</v-btn>
+      <v-btn variant="tonal" @click="setActiveTab('fantasy')">FANTASY</v-btn>
+      <v-btn variant="tonal" @click="setActiveTab('portrait')">PORTRAIT</v-btn>
+      <v-btn variant="tonal" @click="setActiveTab('pixel')">PIXEL</v-btn>
+    </div>
+    <GalleryList :initialTab="activeTab" />
   </div>
 </template>
 
@@ -34,19 +20,13 @@ export default {
   },
   data() {
     return {
-      isModalVisible: false, // Default to hidden
+      activeTab: 'dreams', // Default tab
     };
   },
-  mounted() {
-    // Check if the modal has been shown before
-    // if (!localStorage.getItem('hasSeenModal')) {
-    //   this.isModalVisible = true;
-    //   localStorage.setItem('hasSeenModal', 'true'); // Mark as shown
-    // }
-  },
   methods: {
-    closeModal() {
-      this.isModalVisible = false;
+    setActiveTab(tab) {
+      console.log(tab);
+      this.activeTab = tab;
     },
   },
 };
@@ -54,7 +34,6 @@ export default {
 
 <style scoped>
 .sketchbook {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -62,42 +41,33 @@ export default {
   justify-content: center;
   margin-top: 25%;
 }
+
+.button-group {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-  .title-text {
-    font-size: 2.5rem;
-  }
-
-  .second-star {
-    width: 2.5rem;
-    margin-top: -1.5em;
+  .button-group {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .sketchbook {
     padding: 2em 1.5em;
   }
-
-  .title {
-    margin-top: 5em;
-  }
 }
 
 @media (max-width: 480px) {
-  .title-text {
-    font-size: 2rem;
-  }
-
-  .second-star {
-    width: 2rem;
-    margin-top: -1em;
+  .button-group {
+    flex-direction: column;
+    gap: 0.5em;
   }
 
   .sketchbook {
     padding: 1.5em 1em;
-  }
-
-  .title {
-    margin-top: 3em;
   }
 }
 </style>

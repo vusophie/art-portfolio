@@ -9,9 +9,6 @@
         <v-row justify="center" align="center" class="text-section">
           <div class="divider">
             <h1 class="title-text">{{ photo.title }}</h1> <br>
-          <p class="img-info-text">
-            This is a {{ photo.type }} piece made using {{ photo.description.tools }}.
-          </p>
           </div>
           
           <div class="contact-info">

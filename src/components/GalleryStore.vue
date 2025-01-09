@@ -12,6 +12,7 @@
               :src="photo.filename.original"
               :alt="photo.title"
               class="image"
+              @error="handleImageError(photo)" 
             />
             <div class="overlay">
               <span class="title">{{ photo.title }}</span>
@@ -42,10 +43,23 @@ export default {
   },
   computed: {
     filteredPhotos() {
-      return this.photos.filter(photo => photo.type === this.filterTab);
+      const filtered = this.photos.filter(photo => photo.type === this.filterTab);
+      return filtered;
     },
   },
+  methods: {
+    handleImageError(photo) {
+      console.log(`[ERROR] Image not found: ${photo.filename.original}`);
+    }
+  },
   watch: {
+    initialTab(newTab) {
+      console.log(`[DEBUG] initialTab Updated: ${newTab}`);
+      this.filterTab = newTab; 
+    },
+    filterTab(newTab, oldTab) {
+      console.log(`[DEBUG] filterTab Changed: ${oldTab} -> ${newTab}`);
+    },
     filteredPhotos(newPhotos) {
       this.$emit('filteredPhotos', newPhotos);
     },

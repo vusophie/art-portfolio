@@ -21,7 +21,7 @@
       </RouterLink>
 
       <!-- <div class="sublink contact-btn" @click="showContactDialog = true">contact</div> -->
-      <div class="sublink auth-btn" @click="authLogin">{{ loggedIn ? 'logout' : 'login' }}</div>
+      <!-- <div class="sublink auth-btn" @click="authLogin">{{ loggedIn ? 'logout' : 'login' }}</div> -->
     </div>
 
     <hr class="dotted">
@@ -84,7 +84,7 @@ export default {
       links: [
         { text: "about", route: '/about' },
         { text: 'sketchbook', route: '/' },
-        { text: 'digital', route: '/digital' },
+        // { text: 'digital', route: '/digital' },
         { text: 'contact', route: '/sayhi' },
       ],
     };

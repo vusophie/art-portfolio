@@ -2,7 +2,7 @@
     {
       "id": 0,
       "title": "9 to 5",
-      "type": "sketchbook",
+      "type": "city",
       "filename": {
         "original": "/images/9-5.jpg"
       },
@@ -14,7 +14,7 @@
     {
         "id": 1,
         "title": "Sketch of Adam",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/adam.jpg"
         },
@@ -26,7 +26,7 @@
       {
         "id": 3,
         "title": "Bath",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/bath.jpg"
         },
@@ -38,7 +38,7 @@
       {
         "id": 5,
         "title": "Big Eye",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/big_eye.jpg"
         },
@@ -50,7 +50,7 @@
       {
         "id": 7,
         "title": "Bleeding Out",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/bleeding_out.jpg"
         },
@@ -62,7 +62,7 @@
       {
         "id": 8,
         "title": "Blindsided",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/blindsided.jpg"
         },
@@ -74,7 +74,7 @@
       {
         "id": 9,
         "title": "Blue Study",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/blue_study.jpg"
         },
@@ -86,7 +86,7 @@
       {
         "id": 10,
         "title": "Card Design",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/card_design.jpg"
         },
@@ -98,7 +98,7 @@
       {
         "id": 11,
         "title": "Character Study",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/character_study.jpg"
         },
@@ -110,7 +110,7 @@
       {
         "id": 12,
         "title": "Hotline Miami Chicken Guy",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/chicken_guy.jpg"
         },
@@ -122,7 +122,7 @@
       {
         "id": 13,
         "title": "Cloud Lady",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/cloud_lady.jpg"
         },
@@ -134,7 +134,7 @@
       {
         "id": 14,
         "title": "Color Study 1",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/color_study.jpg"
         },
@@ -147,7 +147,7 @@
       {
         "id": 16,
         "title": "Sketch of my old coworker",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/coworker.jpg"
         },
@@ -159,7 +159,7 @@
       {
         "id": 17,
         "title": "Desires",
-        "type": "sketchbook",
+        "type": "city",
         "filename": {
           "original": "/images/desires.jpg"
         },
@@ -171,7 +171,7 @@
       {
         "id": 18,
         "title": "Dog Won't Stop Moving",
-        "type": "sketchbook",
+        "type": "city",
         "filename": {
           "original": "/images/dog_wont_stop_moving.jpg"
         },
@@ -183,7 +183,7 @@
       {
         "id": 19,
         "title": "Drowning",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/drowning.jpg"
         },
@@ -195,7 +195,7 @@
       {
         "id": 20,
         "title": "Faces",
-        "type": "sketchbook",
+        "type": "city",
         "filename": {
           "original": "/images/faces.jpg"
         },
@@ -207,7 +207,7 @@
       {
         "id": 21,
         "title": "Firestone",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/firestone.jpg"
         },
@@ -219,7 +219,7 @@
       {
         "id": 22,
         "title": "Frog Fighter Character",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/frog_fighter.jpg"
         },
@@ -231,7 +231,7 @@
       {
         "id": 23,
         "title": "Frog Warrior Character",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/frog_warrior.jpg"
         },
@@ -243,7 +243,7 @@
       {
         "id": 24,
         "title": "Two Girls Entering An Uber",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/girls_entering_uber.jpg"
         },
@@ -255,7 +255,7 @@
       {
         "id": 25,
         "title": "Gold Study",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/gold_study.jpg"
         },
@@ -267,7 +267,7 @@
       {
         "id": 26,
         "title": "Hand Practice",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/hand_practice.jpg"
         },
@@ -279,7 +279,7 @@
       {
         "id": 27,
         "title": "Jeff Bezos",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/jeff_bezos.jpg"
         },
@@ -291,7 +291,7 @@
       {
         "id": 28,
         "title": "Hug",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/hug.jpg"
         },
@@ -303,7 +303,7 @@
       {
         "id": 29,
         "title": "Walls",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/incomplete_angel_wall.jpg"
         },
@@ -315,7 +315,7 @@
       {
         "id": 30,
         "title": "Laundry Lady",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/laundry_lady.jpg"
         },
@@ -327,7 +327,7 @@
       {
         "id": 31,
         "title": "Light Purple",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/light_purple.jpg"
         },
@@ -339,7 +339,7 @@
       {
         "id": 32,
         "title": "Lizard Angel",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/lizard_angel.jpg"
         },
@@ -351,7 +351,7 @@
       {
         "id": 33,
         "title": "Melting",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/melting.jpg"
         },
@@ -363,7 +363,7 @@
       {
         "id": 34,
         "title": "Mermaid",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/mermaid.jpg"
         },
@@ -375,7 +375,7 @@
       {
         "id": 35,
         "title": "Merry Go Round",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/merry_go_round.jpg"
         },
@@ -387,7 +387,7 @@
       {
         "id": 36,
         "title": "Mouse Man",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/mouse_man.jpg"
         },
@@ -399,7 +399,7 @@
       {
         "id": 37,
         "title": "Posture Study",
-        "type": "sketch",
+        "type": "portrait",
         "filename": {
           "original": "/images/posture_study.jpg"
         },
@@ -411,7 +411,7 @@
       {
         "id": 38,
         "title": "Pot Study",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/pot_study.jpg"
         },
@@ -423,7 +423,7 @@
       {
         "id": 39,
         "title": "Colors Study",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/primary_colors_study.jpg"
         },
@@ -435,7 +435,7 @@
       {
         "id": 40,
         "title": "Rei",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/rei.jpg"
         },
@@ -447,7 +447,7 @@
       {
         "id": 41,
         "title": "Dark Blue",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/sad_dark_blue.jpg"
         },
@@ -459,7 +459,7 @@
       {
         "id": 42,
         "title": "Sketchy",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/sketchy.jpg"
         },
@@ -471,7 +471,7 @@
       {
         "id": 43,
         "title": "Social Anxiety",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/social_anxiety.jpg"
         },
@@ -483,7 +483,7 @@
       {
         "id": 44,
         "title": "Stoner Study",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/stoner_study.jpg"
         },
@@ -495,7 +495,7 @@
       {
         "id": 45,
         "title": "Stoner",
-        "type": "sketchbook",
+        "type": "city",
         "filename": {
           "original": "/images/stoner.jpg"
         },
@@ -507,7 +507,7 @@
       {
         "id": 46,
         "title": "Street Guy",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/street_guy.jpg"
         },
@@ -519,7 +519,7 @@
       {
         "id": 47,
         "title": "Tall Lady",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/tall_lady.jpg"
         },
@@ -531,7 +531,7 @@
       {
         "id": 48,
         "title": "Texture Study",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/texture_study.jpg"
         },
@@ -543,7 +543,7 @@
       {
         "id": 49,
         "title": "Three-Eyed Guy",
-        "type": "sketchbook",
+        "type": "dreams",
         "filename": {
           "original": "/images/three_eyed_guy.jpg"
         },
@@ -555,7 +555,7 @@
       {
         "id": 50,
         "title": "Turquoise Snakes",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/turquoise_snakes.jpg"
         },
@@ -567,7 +567,7 @@
       {
         "id": 51,
         "title": "Wizard",
-        "type": "sketchbook",
+        "type": "fantasy",
         "filename": {
           "original": "/images/wizard.jpg"
         },
@@ -579,7 +579,7 @@
       {
         "id": 52,
         "title": "Yolanda",
-        "type": "sketchbook",
+        "type": "portrait",
         "filename": {
           "original": "/images/yolanda.jpg"
         },
@@ -591,19 +591,19 @@
       {
         "id": 53,
         "title": "Soup",
-        "type": "digital",
+        "type": "pixel",
         "filename": {
           "original": "/videos/soup.gif"
         },
         "description": {
           "tools": "Procreate",
-          "more": "This is my first digital!"
+          "more": "This is my first animation!"
         }
       },
       {
         "id": 54,
         "title": "Blue Fire",
-        "type": "digital",
+        "type": "pixel",
         "filename": {
           "original": "/videos/blue_fire.gif"
         },
@@ -615,13 +615,24 @@
       {
         "id": 55,
         "title": "Plants And Flowers",
-        "type": "digital",
+        "type": "pixel",
         "filename": {
           "original": "/videos/plants.gif"
         },
         "description": {
           "tools": "Capcut and Flipbook",
-          "more": "This is an attempt at stopmotion."
+          "more": "This is an attempt at stop motion."
+        }
+      },
+      {
+        "id": 56,
+        "title": "Walking",
+        "type": "pixel",
+        "filename": {
+          "original": "/videos/walking_head.png"
+        },
+        "description": {
+          "tools": "Procreate"
         }
       }
       
