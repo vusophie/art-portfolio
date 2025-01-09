@@ -1,47 +1,48 @@
 <template>
   <div class="contact-section">
-    <card class="card-section">
-      <h1>Say Hi</h1>
-      <form ref="form" @submit.prevent="sendEmail">
-        <div class="form-group">
-          <KInput
-            class="form-input"
-            :style="{ width: '100%' }"
-            name="name"
-            v-model="user_name"
-            placeholder="Name"
-          />
-        </div>
-        <div class="form-group">
-          <KInput
-            class="form-input"
-            :style="{ width: '100%' }"
-            name="email"
-            v-model="user_email"
-            placeholder="Email Address"
-          />
-        </div>
-        <div class="form-group">
-          <KTextarea
-            class="form-input"
-            :style="{ width: '100%' }"
-            name="message"
-            v-model="user_message"
-            placeholder="Your Message"
-            :rows="4"
-          />
-        </div>
-        
-        <!-- reCAPTCHA Widget -->
-        <div class="form-group">
-          <div ref="recaptcha"></div>
-        </div>
-        
-        <div class="example-col">
-          <kButton :style="{ width: '100%' }" id="submit-btn">Submit Form</kButton>
-        </div>
-      </form>
-    </card>
+      <!-- <div class="contact-image">
+        <img src="../../public/photos/pc.jpg" alt="Contact Image" />
+      </div> -->
+      <div class="contact-content">
+        <h1>Get in Touch</h1>
+        <h3>
+          I’d love to hear from you! Email me at <a href="mailto:sottvu@gmail.com">sottvu@gmail.com</a> or connect with me on 
+          <a href="https://www.linkedin.com/in/vu-sophie/" target="_blank">LinkedIn</a>. Let’s chat about coding, design, or any creative ideas!
+        </h3>
+        <form ref="form" @submit.prevent="sendEmail" class="contact-form">
+          <div class="form-group">
+            <KInput
+              class="form-input"
+              name="name"
+              v-model="user_name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-group">
+            <KInput
+              class="form-input"
+              name="email"
+              v-model="user_email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="form-group">
+            <KTextarea
+              class="form-input"
+              name="message"
+              v-model="user_message"
+              placeholder="Your Message"
+              :rows="4"
+            />
+          </div>
+          <div class="form-group">
+            <div ref="recaptcha"></div>
+          </div>
+          <div class="form-group">
+            <kButton class="submit-button">Send Message</kButton>
+          </div>
+        </form>
+      </div>
   </div>
 </template>
 
@@ -112,96 +113,121 @@ export default {
 
 <style scoped>
 .contact-section {
-  margin-top: 5em;
-  height: auto;
-  width: 100%;
+  margin-top: 25%;
+  padding: 2em 1em;
   display: flex;
   justify-content: center;
+  font-family: "Roboto Mono", monospace;
+}
+.contact-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.card-section {
-  background-color: white;
+.contact-content {
   padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 600px;
+  flex: 1 1 400px;
 }
 
 h1 {
-  font-family: "Belanosima", sans-serif;
-  color: #1f2f76;
   font-size: 2em;
-  margin-bottom: 1em;
+  color: #1f2f76;
   text-align: center;
+  margin-bottom: 1em;
+  font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+  font-family: "Roboto Mono", monospace;
+
+}
+
+h3 a {
+  color: #ff5a5f;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
 }
 
 .form-group {
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
 }
 
 .form-input {
-  margin: 10px 0;
-  padding: 10px;
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+    font-family: "Roboto Mono", monospace;
+
 }
 
-.k-button {
-  background-color: lightcoral;
+.form-input:focus {
+  border-color: #ff5a5f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 90, 95, 0.5);
+}
+
+.submit-button {
+  background-color: #ff5a5f;
   color: white;
-  border-radius: 4px;
-  padding: 12px 20px;
+  border-radius: 5px;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
   border: none;
   cursor: pointer;
-  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.k-button:hover {
-  background-color: #ff5a5f;
+.submit-button:hover {
+  background-color: #ff7a7f;
 }
 
-.example-col {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
+.submit-button:active {
+  transform: scale(0.98);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .card-section {
+  .contact-content {
     padding: 1.5em;
-    width: 90%;
   }
 
   h1 {
     font-size: 1.8em;
   }
 
-  .form-input {
-    width: 100%;
-  }
-
-  .k-button {
-    padding: 12px 15px;
+  h3 {
+    font-size: 1em;
   }
 }
 
 @media (max-width: 480px) {
   .card-section {
+    flex-direction: column;
+  }
+
+  .contact-content {
     padding: 1em;
-    width: 90%;
   }
 
   h1 {
     font-size: 1.5em;
   }
 
-  .form-input {
-    padding: 8px;
+  h3 {
+    font-size: 0.9em;
   }
 
-  .k-button {
-    padding: 10px 15px;
+  .submit-button {
+    padding: 0.6em 1.2em;
   }
 }
 </style>

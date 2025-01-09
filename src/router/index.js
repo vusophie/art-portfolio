@@ -31,6 +31,11 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue')
     },
     {
+      path: '/sayhi',
+      name: 'sayhi',
+      component: () => import('../views/ContactView.vue')
+    },
+    {
       path: '/image/:id',
       name: 'image',
       component: () => import('../views/ImageView.vue'),

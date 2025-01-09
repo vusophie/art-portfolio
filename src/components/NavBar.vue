@@ -20,7 +20,7 @@
         {{ link.text }}
       </RouterLink>
 
-      <div class="sublink contact-btn" @click="showContactDialog = true">contact</div>
+      <!-- <div class="sublink contact-btn" @click="showContactDialog = true">contact</div> -->
       <div class="sublink auth-btn" @click="authLogin">{{ loggedIn ? 'logout' : 'login' }}</div>
     </div>
 
@@ -28,7 +28,7 @@
 
   </nav>
 
-  <v-dialog v-model="showContactDialog" persistent max-width="600">
+  <!-- <v-dialog v-model="showContactDialog" persistent max-width="600">
     <template v-slot:default>
       <v-card>
         <v-card-title class="gradient-bg">
@@ -44,7 +44,7 @@
         <v-img src="../../public/photos/2.png" max-height="200px" />
       </v-card>
     </template>
-  </v-dialog>
+  </v-dialog> -->
 
   <v-dialog v-model="showLoginDialog" persistent max-width="600">
     <template v-slot:default>
@@ -85,6 +85,7 @@ export default {
         { text: "about", route: '/about' },
         { text: 'sketchbook', route: '/' },
         { text: 'digital', route: '/digital' },
+        { text: 'contact', route: '/sayhi' },
       ],
     };
   },
