@@ -32,10 +32,10 @@ export default {
     return {
       activeTab: 'dreams', // Default tab
       tabs: [
-        { name: 'dreams', label: 'DREAMS', image: '../../public/photos/dreams.png' },
-        { name: 'fantasy', label: 'FANTASY', image: '../../public/photos/fantasy.png' },
-        { name: 'portrait', label: 'PORTRAIT', image: '../../public/photos/portrait.png' },
-        { name: 'pixel', label: 'PIXEL', image: '../../public/photos/pixel.png' },
+        { name: 'dreams', label: 'DREAMS', image: '../../public/photos/dreams.jpg' },
+        { name: 'fantasy', label: 'FANTASY', image: '../../public/photos/fantasy.jpg' },
+        { name: 'portrait', label: 'PORTRAIT', image: '../../public/photos/portrait.jpg' },
+        { name: 'pixel', label: 'PIXEL', image: '../../public/photos/pixel.jpg' },
       ],
     };
   },
