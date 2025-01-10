@@ -22,8 +22,13 @@
 
 <script>
 import GalleryList from '../components/GalleryList.vue';
+import dreamsImage from '../../public/photos/png2jpg/dreams.jpg';
+import fantasyImage from '../../public/photos/png2jpg/fantasy.jpg';
+import portraitImage from '../../public/photos/png2jpg/portrait.jpg';
+import pixelImage from '../../public/photos/png2jpg/pixel.jpg';
 
 export default {
+
   name: 'Sketchbook',
   components: {
     GalleryList,
@@ -32,10 +37,10 @@ export default {
     return {
       activeTab: 'dreams', // Default tab
       tabs: [
-        { name: 'dreams', label: 'DREAMS', image: "../../public/photos/landing.jpg" },
-        { name: 'fantasy', label: 'FANTASY', image: "../../public/photos/png2jpg/fantasy.jpg" },
-        { name: 'portrait', label: 'PORTRAIT', image: "../../public/photos/png2jpg/portrait.jpg" },
-        { name: 'pixel', label: 'PIXEL', image: "../../public/photos/png2jpg/pixel.jpg" },
+      { name: 'dreams', label: 'DREAMS', image: dreamsImage },
+      { name: 'fantasy', label: 'FANTASY', image: fantasyImage },
+      { name: 'portrait', label: 'PORTRAIT', image: portraitImage },
+      { name: 'pixel', label: 'PIXEL', image: pixelImage },
       ],
     };
   },
