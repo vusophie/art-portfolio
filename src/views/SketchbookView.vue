@@ -32,8 +32,6 @@ export default {
     return {
       activeTab: 'dreams', // Default tab
       tabs: [
-      <img src="../../public/photos/landing.jpg" class="doodle" />
-
         { name: 'dreams', label: 'DREAMS', image: "../../public/photos/landing.jpg" },
         { name: 'fantasy', label: 'FANTASY', image: "../../public/photos/png2jpg/fantasy.jpg" },
         { name: 'portrait', label: 'PORTRAIT', image: "../../public/photos/png2jpg/portrait.jpg" },
