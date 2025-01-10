@@ -22,10 +22,10 @@
 
 <script>
 import GalleryList from '../components/GalleryList.vue';
-import dreamsImage from '../../public/photos/png2jpg/dreams.jpg';
-import fantasyImage from '../../public/photos/png2jpg/fantasy.jpg';
-import portraitImage from '../../public/photos/png2jpg/portrait.jpg';
-import pixelImage from '../../public/photos/png2jpg/pixel.jpg';
+import dreamsImage from '../../public/photos/dreams.jpg';
+import fantasyImage from '../../public/photos/fantasy.jpg';
+import portraitImage from '../../public/photos/portrait.jpg';
+import pixelImage from '../../public/photos/pixel.jpg';
 
 export default {
 
