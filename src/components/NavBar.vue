@@ -19,32 +19,10 @@
       >
         {{ link.text }}
       </RouterLink>
-
-      <!-- <div class="sublink contact-btn" @click="showContactDialog = true">contact</div> -->
-      <!-- <div class="sublink auth-btn" @click="authLogin">{{ loggedIn ? 'logout' : 'login' }}</div> -->
     </div>
 
     <hr class="dotted">
-
   </nav>
-
-  <!-- <v-dialog v-model="showContactDialog" persistent max-width="600">
-    <template v-slot:default>
-      <v-card>
-        <v-card-title class="gradient-bg">
-          <span class="text-h5">Let's Connect!</span>
-          <v-btn icon dark @click="showContactDialog = false">
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
-        </v-card-title>
-        <v-card-text>
-          <p>I’d love to hear from you! Email me at <a href="mailto:sottvu@gmail.com" class="link">sottvu@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/vusophie" target="_blank" class="link">LinkedIn</a>.</p>
-          <p>Let’s chat about coding, design, or any creative ideas!</p>
-        </v-card-text>
-        <v-img src="../../public/photos/2.png" max-height="200px" />
-      </v-card>
-    </template>
-  </v-dialog> -->
 
   <v-dialog v-model="showLoginDialog" persistent max-width="600">
     <template v-slot:default>
@@ -67,13 +45,12 @@
   <keep-alive><RouterView /></keep-alive>
 </template>
 
-
 <script>
 export default {
   data() {
     return {
       showNavbar: true,
-      activeIndex: null, 
+      activeIndex: null,
       showContactDialog: false,
       showLoginDialog: false,
       loggedIn: false,
@@ -84,7 +61,6 @@ export default {
       links: [
         { text: "about", route: '/about' },
         { text: 'sketchbook', route: '/' },
-        // { text: 'digital', route: '/digital' },
         { text: 'contact', route: '/sayhi' },
       ],
     };
@@ -120,44 +96,60 @@ export default {
       return !!value || 'Required.';
     },
     scrollFunction() {
-      const navbar = document.querySelector('.navbar');
-      const title = document.querySelector('.title');
-      const dotted = document.querySelector('.dotted');
-      if (window.scrollY > 80) {
-        title.style.fontSize = '25px';
-        navbar.style.height = '20%';
-        navbar.style.marginBottom = '5%';
-        title.style.paddingTop = '0.5%';
-        navbar.style.zIndex = 1000;
-        dotted.style.visibility = 'hidden';
-      } else {
-        title.style.fontSize = '8vh';
-        navbar.style.backgroundColor = '#f9f7f3';  // Ensure background is set on scroll up
-        dotted.style.visibility = 'visible';
-        title.style.paddingTop = '5%';
+      if (this.showNavbar) {
+        const navbar = document.querySelector('.navbar');
+        const title = document.querySelector('.title');
+        const dotted = document.querySelector('.dotted');
+        if (window.scrollY > 80) {
+          title.style.fontSize = '25px';
+          navbar.style.height = '20%';
+          navbar.style.marginBottom = '5%';
+          title.style.paddingTop = '0.5%';
+          navbar.style.zIndex = 1000;
+          dotted.style.visibility = 'hidden';
+        } else {
+          title.style.fontSize = '8vh';
+          navbar.style.height = '';
+          navbar.style.backgroundColor = '#f9f7f3';
+          dotted.style.visibility = 'visible';
+          title.style.paddingTop = '5%';
+          dotted.style.visibility = 'visible';
+        }      
       }
-    },
+    },      
   },
   watch: {
+    // Watch for route changes to detect if we are on the /image/:id route
     $route(to) {
       const activeIndex = this.links.findIndex(link => link.route === to.path);
       this.activeIndex = activeIndex !== -1 ? activeIndex : null;
+
+      // Hide navbar on image route
+      if (to.name === 'image') {
+        this.showNavbar = false;
+      } else {
+        this.showNavbar = true;
+      }
     },
   },
   mounted() {
+    // Check initial route on mount
     const activeIndex = this.links.findIndex(link => link.route === this.$route.path);
     this.activeIndex = activeIndex !== -1 ? activeIndex : null;
 
     // Add scroll event listener
     window.addEventListener('scroll', this.scrollFunction);
+
+    // Hide navbar if we are on the image route
+    if (this.$route.name === 'image') {
+      this.showNavbar = false;
+    }
   },
   beforeDestroy() {
     // Remove scroll event listener
     window.removeEventListener('scroll', this.scrollFunction);
   },
 };
-
-
 </script>
 
 <style scoped>
@@ -165,8 +157,7 @@ export default {
   font-family: 'Basteleur';
   src: url('../../public/Basteleur-Bold.otf') format('opentype');
   font-weight: normal; 
-  font-style: normal; 
-  /* visibility: hidden; */
+  font-style: normal;
 }
 
 hr.dotted {
@@ -202,11 +193,11 @@ hr.dotted {
   align-self: center;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9f7f3; /* Default background */
+  background-color: #f9f7f3;
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: padding 0.3s ease, background-color 0.3s ease; /* Ensure smooth transitions */
+  transition: padding 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar--hidden {
@@ -230,20 +221,20 @@ hr.dotted {
 
 .sublink {
   text-decoration: none;
-  color: #5790f4; /* Default link color */
+  color: #5790f4;
   font-size: 1.1rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
-  transition: color 0.3s ease; /* Smooth color change */
+  transition: color 0.3s ease;
 }
 
 .sublink:hover {
-  color: #f35f71; /* Hover color */
-  background-color: transparent; /* No bubble effect */
+  color: #f35f71;
+  background-color: transparent;
 }
 
 .sublink.active {
-  color: #f35f71; /* Active link color */
+  color: #f35f71;
 }
 
 .auth-btn,
@@ -256,7 +247,7 @@ hr.dotted {
 
 .auth-btn:hover,
 .contact-btn:hover {
-  color: #2575fc; /* Hover color for buttons */
+  color: #2575fc;
 }
 
 .gradient-bg {
@@ -294,4 +285,3 @@ hr.dotted {
   }
 }
 </style>
-
