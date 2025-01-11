@@ -60,7 +60,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 32%;
 
   h1 {
     font-family: "Roboto Mono", monospace;
