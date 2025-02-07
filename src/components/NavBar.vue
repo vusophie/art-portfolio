@@ -84,7 +84,7 @@ export default {
       links: [
         { text: "about", route: '/about' },
         { text: 'sketchbook', route: '/' },
-        // { text: 'digital', route: '/digital' },
+        { text: 'admin upload', route: '/adminupload' },
         { text: 'contact', route: '/sayhi' },
       ],
     };

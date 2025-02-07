@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+PRODID:-//zoom.us//iCalendar Event//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+CLASS:PUBLIC
+BEGIN:VTIMEZONE
+TZID:America/New_York
+LAST-MODIFIED:20250121T082933Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZNAME:EDT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:EST
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20250206T133240Z
+DTSTART;TZID=America/New_York:20250206T081500
+DTEND;TZID=America/New_York:20250206T113000
+SUMMARY:POL4778
+EXDATE;TZID=America/New_York:20250109T081500
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250403T153000Z;INTERVAL=1;BYDAY=TH
+UID:EVENTk3ssFtDARWmgw4E75C6ogw@zoom.us
+TZID:America/New_York
+DESCRIPTION:Alex Payette is inviting you to a scheduled Zoom meeting.\nJo
+ in Zoom Meeting\nhttps://uottawa-ca.zoom.us/j/94320619510?pwd=wv4pWZ54Cs
+ eZpPfhocvnmReqO2a2ut.1\n\nMeeting ID: 943 2061 9510\nPasscode: Redr4D\n\
+ n---\n\nOne tap mobile\n+15873281099\,\,94320619510#\,\,\,\,*821719# Can
+ ada\n+16132093054\,\,94320619510#\,\,\,\,*821719# Canada\n\n---\n\nDial 
+ by your location\n• +1 587 328 1099 Canada\n• +1 613 209 3054 Canada\n• 
+ +1 647 374 4685 Canada\n• +1 647 558 0588 Canada\n• +1 778 907 2071 Cana
+ da\n• +1 204 272 7920 Canada\n• +1 438 809 7799 Canada\n• +1 312 626 679
+ 9 US (Chicago)\n• +1 346 248 7799 US (Houston)\n• +1 669 900 6833 US (Sa
+ n Jose)\n• +1 929 205 6099 US (New York)\n• +1 253 215 8782 US (Tacoma)\
+ n• +1 301 715 8592 US (Washington DC)\n\nMeeting ID: 943 2061 9510\nPass
+ code: 821719\n\nFind your local number: https://uottawa-ca.zoom.us/u/aBU
+ 5tknx8\n\n---\n\nJoin by SIP\n• 94320619510@zoomcrc.com\n\n---\n\nJoin b
+ y H.323\n• 144.195.19.161 (US West)\n• 206.247.11.121 (US East)\n• 115.1
+ 14.131.7 (India Mumbai)\n• 115.114.115.7 (India Hyderabad)\n• 159.124.15
+ .191 (Amsterdam Netherlands)\n• 159.124.47.249 (Germany)\n• 159.124.104.
+ 213 (Australia Sydney)\n• 159.124.74.212 (Australia Melbourne)\n• 170.11
+ 4.180.219 (Singapore)\n• 64.211.144.160 (Brazil)\n• 159.124.168.213 (Can
+ ada Toronto)\n• 159.124.196.25 (Canada Vancouver)\n• 170.114.194.163 (Ja
+ pan Tokyo)\n• 147.124.100.25 (Japan Osaka)\n\nMeeting ID: 943 2061 9510\
+ nPasscode: 821719\n\n
+LOCATION:https://uottawa-ca.zoom.us/j/94320619510?pwd=wv4pWZ54CseZpPfhocv
+ nmReqO2a2ut.1
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -49,16 +49,16 @@ export default {
   },
   methods: {
     handleImageError(photo) {
-      console.log(`[ERROR] Image not found: ${photo.filename.original}`);
+      // console.log([ERROR] Image not found: ${photo.filename.original});
     }
   },
   watch: {
     initialTab(newTab) {
-      console.log(`[DEBUG] initialTab Updated: ${newTab}`);
+      // console.log([DEBUG] initialTab Updated: ${newTab});
       this.filterTab = newTab; 
     },
     filterTab(newTab, oldTab) {
-      console.log(`[DEBUG] filterTab Changed: ${oldTab} -> ${newTab}`);
+      // console.log([DEBUG] filterTab Changed: ${oldTab} -> ${newTab});
     },
     filteredPhotos(newPhotos) {
       this.$emit('filteredPhotos', newPhotos);

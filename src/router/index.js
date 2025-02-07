@@ -21,14 +21,14 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../views/ContactView.vue')
-    },
-    {
       path: '/sayhi',
       name: 'sayhi',
       component: () => import('../views/ContactView.vue')
+    },
+    {
+      path: '/adminupload',
+      name: 'adminupload',
+      component: () => import('../views/AdminUpload.vue')
     },
     {
       path: '/image/:id',

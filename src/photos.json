@@ -265,30 +265,6 @@
         }
       },
       {
-        "id": 26,
-        "title": "Hand Practice",
-        "type": "dreams",
-        "filename": {
-          "original": "/images/hand_practice.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "I wanted to do a study of hands and eyes."
-        }
-      },
-      {
-        "id": 27,
-        "title": "Jeff Bezos",
-        "type": "portrait",
-        "filename": {
-          "original": "/images/jeff_bezos.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "Jeff Bezos as Saitama."
-        }
-      },
-      {
         "id": 28,
         "title": "Hug",
         "type": "dreams",
@@ -409,18 +385,6 @@
         }
       },
       {
-        "id": 38,
-        "title": "Pot Study",
-        "type": "dreams",
-        "filename": {
-          "original": "/images/pot_study.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "I saw plant pots and created these characters from them."
-        }
-      },
-      {
         "id": 39,
         "title": "Colors Study",
         "type": "dreams",
@@ -442,30 +406,6 @@
         "description": {
           "tools": "crayons and sketch paper",
           "more": "I drew Rei from Evangelion."
-        }
-      },
-      {
-        "id": 41,
-        "title": "Dark Blue",
-        "type": "dreams",
-        "filename": {
-          "original": "/images/sad_dark_blue.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "I wanted to illustrate substance abuse."
-        }
-      },
-      {
-        "id": 42,
-        "title": "Sketchy",
-        "type": "dreams",
-        "filename": {
-          "original": "/images/sketchy.jpg"
-        },
-        "description": {
-          "tools": "crayons and sketch paper",
-          "more": "I wanted to draw the feeling of brain fog."
         }
       },
       {
@@ -630,6 +570,72 @@
         "type": "pixel",
         "filename": {
           "original": "/videos/walking_head.gif"
+        },
+        "description": {
+          "tools": "Procreate"
+        }
+      },
+      {
+        "id": 57,
+        "title": "Milky Road",
+        "type": "pixel",
+        "filename": {
+          "original": "/images/milkbag.png"
+        },
+        "description": {
+          "tools": "Procreate"
+        }
+      },
+      {
+        "id": 58,
+        "title": "Winter",
+        "type": "dreams",
+        "filename": {
+          "original": "/images/winter.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper"
+        }
+      },
+      {
+        "id": 59,
+        "title": "Mind > Matter",
+        "type": "dreams",
+        "filename": {
+          "original": "/images/tired.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper"
+        }
+      },
+      {
+        "id": 60,
+        "title": "Walking",
+        "type": "dreams",
+        "filename": {
+          "original": "/images/melting_pot.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper"
+        }
+      },
+      {
+        "id": 61,
+        "title": "Knight Design",
+        "type": "fantasy",
+        "filename": {
+          "original": "/images/knight_design.jpg"
+        },
+        "description": {
+          "tools": "crayons and sketch paper"
+        }
+      },
+      {
+        "id": 62,
+        "title": "Montreal Trip",
+        "type": "pixel",
+        "filename": {
+          "original": "/images/montreal_trip.png"
         },
         "description": {
           "tools": "Procreate"
